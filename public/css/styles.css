@@ -18,6 +18,22 @@ h2 {
     color: #000000;
 }
 
+h5 {
+    position: static;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+
+    color: #000000;
+}
+
 p {
     font-family: Rubik;
     font-style: normal;
