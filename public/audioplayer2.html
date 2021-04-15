@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/dropdownmeny.css" />
+    <link rel="stylesheet" type="text/css" href="css/audioplayer.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Rubik:400,300,700,500|Rubik+Mono+One:400|Roboto:400,700,500");
+
+      .component-wrapper a,
+      .screen a {
+        text-decoration: none;
+        display: contents;
+      }
+
+      .full-width-a {
+        width: 100%;
+      }
+
+      .full-height-a {
+        height: 100%;
+      }
+
+      .screen textarea:focus,
+      .screen input:focus {
+        outline: none;
+      }
+
+      .screen *,
+      .component-wrapper * {
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .screen div {
+        -webkit-text-size-adjust: none;
+      }
+
+      .container-center-vertical,
+      .container-center-horizontal {
+        pointer-events: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container-center-vertical {
+        align-items: center;
+        height: 100%;
+      }
+
+      .container-center-horizontal {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .container-center-vertical > *,
+      .container-center-horizontal > * {
+        pointer-events: auto;
+        flex-shrink: 0;
+      }
+
+      .component-wrapper,
+      .screen {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+      }
+
+      .auto-animated div {
+        opacity: 0;
+        position: absolute;
+        --z-index: -1;
+      }
+
+      .auto-animated .container-center-vertical,
+      .auto-animated .container-center-horizontal {
+        opacity: 1;
+      }
+
+      .overlay {
+        position: absolute;
+        opacity: 0;
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+
+      .animate-appear {
+        opacity: 0;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 normal forwards;
+      }
+
+      .animate-disappear {
+        opacity: 1;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 reverse forwards;
+      }
+
+      .animate-nodelay {
+        animation-delay: 0s;
+      }
+
+      @keyframes reveal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+      .align-self-flex-center {
+        align-self: center;
+      }
+      .valign-text-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .valign-text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      input:focus {
+        outline: none;
+      }
+      .component-wrapper,
+      .component-wrapper * {
+        pointer-events: none;
+      }
+
+      .component-wrapper a *,
+      .component-wrapper a,
+      .component-wrapper input,
+      .component-wrapper video,
+      .component-wrapper iframe,
+      .listeners-active,
+      .listeners-active * {
+        pointer-events: auto;
+      }
+
+      .hidden,
+      .hidden * {
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .smart-layers-pointers,
+      .smart-layers-pointers * {
+        pointer-events: auto;
+        visibility: visible;
+      }
+
+      .component-wrapper.not-ready,
+      .component-wrapper.not-ready * {
+        visibility: hidden !important;
+      }
+
+      .listeners-active-click,
+      .listeners-active-click * {
+        cursor: pointer;
+      }
+
+      @import url("https://fonts.googleapis.com/css?family=Rubik:400,300,700,500|Rubik+Mono+One:400|Roboto:400,700,500");
+      * {
+        box-sizing: border-box;
+      }
+      .border-0-6px-black {
+        border: 0.6px solid var(--black);
+      }
+      .border-0-8px-black {
+        border: 0.8px solid var(--black);
+      }
+      .border-0-9px-white {
+        border: 0.9px solid var(--white);
+      }
+      .border-1px-black {
+        border: 1px solid var(--black);
+      }
+      .border-1px-fuscous-gray {
+        border: 1px solid var(--fuscous-gray);
+      }
+      .border-1px-white {
+        border: 1px solid var(--white);
+      }
+      .rubik-bold-black-16px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-16px);
+        font-style: normal;
+        font-weight: 700;
+      }
+      .rubik-bold-black-18px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-18px);
+        font-style: normal;
+        font-weight: 700;
+      }
+      .rubik-bold-black-37-9px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-37_9px);
+        font-style: normal;
+        font-weight: 700;
+      }
+      .rubik-medium-black-16px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-16px);
+        font-style: normal;
+        font-weight: 500;
+      }
+      .rubik-medium-chicago-36px {
+        color: rgba(94, 94, 94, 1);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-36px);
+        font-style: normal;
+        font-weight: 500;
+      }
+      .rubik-normal-black-14px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-14px);
+        font-style: normal;
+        font-weight: 400;
+      }
+      .rubik-normal-black-16px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-16px);
+        font-style: normal;
+        font-weight: 400;
+      }
+      .rubik-normal-dove-gray-14px {
+        color: var(--dove-gray);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-14px);
+        font-style: normal;
+        font-weight: 400;
+      }
+      .rubik-normal-fuscous-gray-16px {
+        color: var(--fuscous-gray);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-16px);
+        font-style: normal;
+        font-weight: 400;
+      }
+      .rubik-normal-wild-sand-16px {
+        color: var(--wild-sand);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-16px);
+        font-style: normal;
+        font-weight: 400;
+      }
+      :root {
+        --black: rgba(0, 0, 0, 1);
+        --celeste: rgba(207, 207, 207, 1);
+        --dove-gray: rgba(110, 110, 110, 1);
+        --font-family-rubik: "Rubik", Helvetica;
+        --font-size-14px: 14px;
+        --font-size-16px: 16px;
+        --font-size-18px: 18px;
+        --font-size-36px: 36px;
+        --font-size-37_9px: 37.9px;
+        --fuscous-gray: rgba(84, 84, 84, 1);
+        --hint-of-red: rgba(249, 249, 249, 1);
+        --mercury: rgba(230, 230, 230, 1);
+        --mist-gray: rgba(196, 196, 196, 1);
+        --pink-swan: rgba(183, 183, 183, 1);
+        --white: rgba(255, 255, 255, 1);
+        --wild-sand: rgba(244, 244, 244, 1);
+      }
+    </style>
+    <meta name="author" content="AnimaApp.com - Design to code, Automated." />
+  </head>
+  <body style="margin: 0; background: rgba(53, 53, 53, 1)">
+    <input type="hidden" id="anPageName" name="page" value="audioplayer" />
+    <div class="container-center-horizontal">
+      <div class="audioplayer screen">
+        <div class="menubarinloggad-C61RwL">
+          <a href="loggedinlandingpage.html" class="align-self-flex-center">
+            <div class="loggo-bxgaHT">
+              <div class="ookstep-i10643981067196-58J6IH rubik-bold-black-37-9px">ookstep</div>
+              <div class="logo2bookstep-1-58J6IH"></div>
+              <img class="b-logo-3-58J6IH" src="img/b-logo-3@2x.png" /></div
+          ></a>
+          <a href="loggedinlandingpage.html"
+            ><div class="hem-i10643981067180-bxgaHT rubik-normal-black-16px">Hem</div></a
+          >
+          <a href="productpage.html" class="align-self-flex-center"
+            ><div class="bcker-i10643981067179-bxgaHT rubik-normal-black-16px">Böcker</div></a
+          >
+          <div class="om-oss-i10643981067178-bxgaHT rubik-normal-black-16px">Om oss</div>
+          <div class="kontakt-i10643981067177-bxgaHT rubik-normal-black-16px">Kontakt</div>
+          <a href="javascript:ShowOverlay('dropdownmeny', 'animate-appear');">
+            <div class="profil-bxgaHT">
+              <div class="anvndarnamn-i10643981067193-HCfW0l rubik-normal-black-16px">Användarnamn</div>
+              <img class="vector-HCfW0l" src="img/vector-12@2x.svg" />
+              <div class="profile-HCfW0l">
+                <div class="bxbx-user-LV8roB">
+                  <img class="vector-d0PgHK" src="img/vector@2x.png" />
+                  <img class="vector-xoDvf6" src="img/vector-59@2x.svg" />
+                </div>
+              </div></div
+          ></a>
+          <a href="index-landingpage.html">
+            <div class="loggaut-bxgaHT border-1px-fuscous-gray">
+              <div class="logga-ut-i10643981067182-wQXDsF rubik-normal-fuscous-gray-16px">Logga ut</div>
+              <div class="group-wQXDsF">
+                <img class="vector-Tu5MOb" src="img/vector-35@2x.svg" />
+                <img class="vector-5IUgZZ" src="img/vector-10@2x.svg" />
+                <img class="vector-ecSiqR" src="img/vector-11@2x.svg" />
+              </div></div
+          ></a>
+        </div>
+        <div class="flex-row-C61RwL">
+          <div class="overlap-group2-dXBp89">
+            <img class="ellipse-330-zUA2mT" src="img/ellipse-330@2x.svg" />
+            <img class="ellipse-331-zUA2mT" src="img/ellipse-331@2x.svg" />
+            <img class="ellipse-332-zUA2mT" src="img/ellipse-332@2x.svg" />
+            <img class="arrow-5-zUA2mT" src="img/arrow-5@2x.svg" />
+          </div>
+          <div class="overlap-group1-dXBp89">
+            <img class="ellipse-327-iQaBfH" src="img/ellipse-327@2x.svg" />
+            <img class="arrow-3-iQaBfH" src="img/arrow-3@2x.svg" />
+            <img class="arrow-4-iQaBfH" src="img/arrow-4@2x.svg" />
+          </div>
+          <img class="subtract-dXBp89" src="img/subtract@2x.svg" />
+          <div class="flex-col-dXBp89">
+            <div class="boktitel-0PZcXW">Boktitel</div>
+            <div class="av-0PZcXW">Av...</div>
+            <audio controls autoplayer>
+              <source src="http://dl.groovygecko.net/anon.groovy/clients/rnib/TB/servant_of_the_empire2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+            <div class="overlap-group4-0PZcXW">
+              <div class="rectangle-503-ttMvh5 border-0-9px-white"></div>
+              <img class="arrow-7-ttMvh5" src="img/arrow-7@2x.svg" />
+            </div>
+          </div>
+          <div class="x-1-dXBp89">x 1</div>
+          <div class="overlap-group-dXBp89">
+            <img class="ellipse-326-h7LeMT" src="img/ellipse-326@2x.svg" />
+            <img class="arrow-1-h7LeMT" src="img/arrow-1@2x.svg" />
+            <img class="arrow-2-h7LeMT" src="img/arrow-2@2x.svg" />
+          </div>
+          <div class="overlap-group3-dXBp89">
+            <img class="ellipse-334-iofYqm" src="img/ellipse-334@2x.svg" />
+            <img class="ellipse-336-iofYqm" src="img/ellipse-336@2x.svg" />
+            <img class="arrow-6-iofYqm" src="img/arrow-6@2x.svg" />
+          </div>
+        </div>
+        <div class="overlap-group5-C61RwL">
+          <div class="rectangle-509-m4CVSK"></div>
+          <img class="line-34-m4CVSK" src="img/line-34@2x.svg" />
+          <img class="line-35-m4CVSK" src="img/line-35@2x.svg" />
+          <div class="anvndare-kan-nu-och-google-play-m4CVSK">
+            Användare kan nu synkronisera Bookstep med de senaste träningsapparna från App Store och Google Play.
+          </div>
+          <div class="group-511-m4CVSK">
+            <div class="rectangle-556-qb7VCa"></div>
+            <img class="vector-qb7VCa" src="img/vector-33@2x.svg" />
+            <div class="download-from-app-store-qb7VCa">
+              <span class="span0-a4d5Ba">DOWNLOAD FROM<br /></span><span class="span1-a4d5Ba">APP STORE</span>
+            </div>
+          </div>
+          <div class="group-513-m4CVSK">
+            <div class="group-512-TSU94u">
+              <div class="rectangle-556-aEzwGs"></div>
+              <div class="download-from-google-play-aEzwGs">
+                <span class="span0-MgaZoV">DOWNLOAD FROM<br /></span><span class="span1-MgaZoV">Google play</span>
+              </div>
+            </div>
+            <img class="vector-TSU94u" src="img/vector-34@2x.svg" />
+          </div>
+          <div class="group-573-m4CVSK"><img class="b-logo-4-skbiHL" src="img/b-logo-4@2x.png" /></div>
+        </div>
+        <div class="overlap-group6-C61RwL">
+          <img class="ellipse-367-KnyYHa" src="img/ellipse-367@2x.svg" />
+          <div class="x1-KnyYHa">1</div>
+          <div class="group-555-KnyYHa">
+            <img class="ellipse-368-UQmhqA" src="img/ellipse-368@2x.svg" />
+            <div class="x2-UQmhqA rubik-medium-chicago-36px">2</div>
+            <img class="vector-UQmhqA" src="img/vector-41@2x.svg" />
+          </div>
+          <div class="group-558-KnyYHa">
+            <img class="ellipse-368-7Ey4xg" src="img/ellipse-368@2x.svg" />
+            <div class="x7-7Ey4xg rubik-medium-chicago-36px">7</div>
+            <img class="vector-7Ey4xg" src="img/vector-41@2x.svg" />
+          </div>
+          <div class="group-556-KnyYHa">
+            <img class="ellipse-369-UbhGks" src="img/ellipse-368@2x.svg" />
+            <div class="x3-UbhGks rubik-medium-chicago-36px">3</div>
+            <img class="vector-UbhGks" src="img/vector-41@2x.svg" />
+          </div>
+          <div class="group-559-KnyYHa">
+            <img class="ellipse-369-zRDKkS" src="img/ellipse-368@2x.svg" />
+            <div class="x8-zRDKkS rubik-medium-chicago-36px">8</div>
+            <img class="vector-zRDKkS" src="img/vector-41@2x.svg" />
+          </div>
+          <div class="group-557-KnyYHa">
+            <img class="ellipse-370-JWa7E2" src="img/ellipse-368@2x.svg" />
+            <div class="x4-JWa7E2 rubik-medium-chicago-36px">4</div>
+            <img class="vector-JWa7E2" src="img/vector-41@2x.svg" />
+          </div>
+          <div class="group-560-KnyYHa">
+            <img class="ellipse-370-v1OmIl" src="img/ellipse-368@2x.svg" />
+            <div class="x9-v1OmIl rubik-medium-chicago-36px">9</div>
+            <img class="vector-v1OmIl" src="img/vector-41@2x.svg" />
+          </div>
+          <div class="group-567-KnyYHa">
+            <img class="ellipse-371-v5fSN2" src="img/ellipse-368@2x.svg" />
+            <div class="x6-v5fSN2 rubik-medium-chicago-36px">6</div>
+            <img class="vector-v5fSN2" src="img/vector-41@2x.svg" />
+          </div>
+          <div class="group-568-KnyYHa">
+            <img class="ellipse-372-UHBFlc" src="img/ellipse-368@2x.svg" />
+            <div class="x10-UHBFlc rubik-medium-chicago-36px">10</div>
+            <img class="vector-UHBFlc" src="img/vector-48@2x.svg" />
+          </div>
+          <div class="group-569-KnyYHa">
+            <img class="ellipse-372-OMTeX2" src="img/ellipse-368@2x.svg" />
+            <div class="x11-OMTeX2 rubik-medium-chicago-36px">11</div>
+            <img class="vector-OMTeX2" src="img/vector-48@2x.svg" />
+          </div>
+          <div class="group-570-KnyYHa">
+            <img class="ellipse-372-l58oQ4" src="img/ellipse-368@2x.svg" />
+            <div class="x12-l58oQ4 rubik-medium-chicago-36px">12</div>
+            <img class="vector-l58oQ4" src="img/vector-48@2x.svg" />
+          </div>
+          <div class="group-571-KnyYHa">
+            <img class="ellipse-372-MNPx9k" src="img/ellipse-368@2x.svg" />
+            <div class="x12-MNPx9k rubik-medium-chicago-36px">12</div>
+            <img class="vector-MNPx9k" src="img/vector-48@2x.svg" />
+          </div>
+          <div class="group-566-KnyYHa">
+            <div class="group-565-5wcUPi"><img class="vector-242-AHPqQ6" src="img/vector-242-7@2x.svg" /></div>
+            <div class="group-564-5wcUPi"><img class="vector-242-LVekaf" src="img/vector-242-6@2x.svg" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay-dropdownmeny" class="overlay" style="min-height: 900px">
+      <div class="container-center-horizontal">
+        <div class="dropdownmeny screen">
+          <img class="vector-C61RwL" src="img/vector@2x.svg" />
+          <div class="frame-26-C61RwL">
+            <a href="macbook-pro-78.html"><div class="pgende-bok-yS5w2I">Pågående bok</div></a>
+            <a href="frame-18.html"><div class="profil-yS5w2I">Profil</div></a>
+            <div class="bokteam-yS5w2I">Bokteam</div>
+            <div class="statistik-yS5w2I">Statistik</div>
+            <a href="macbook-pro-79.html"><div class="instllningar-yS5w2I">Inställningar</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var overlay_id = "overlay-dropdownmeny";
+      document.getElementById(overlay_id).addEventListener(
+        "click",
+        function (event) {
+          var e = event || window.event;
+          var clickedDiv = e.toElement || e.target;
+          if (clickedDiv.parentElement.id == overlay_id) {
+            HideOverlay("dropdownmeny", "animate-disappear");
+          }
+        },
+        false
+      );
+    </script>
+    <script>
+      ShowOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
+        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var last = cssClasses.slice(-1)[0];
+        if (last.lastIndexOf("animate") == -1) {
+          document.getElementById(overlayName).className =
+            document.getElementById(overlayName).className + " " + animationName;
+        }
+        if (window.loadAsyncSrc != undefined) {
+          loadAsyncSrc();
+        }
+      };
+      HideOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
+        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var last = cssClasses.slice(-1)[0];
+        if (last.lastIndexOf("animate") != -1) {
+          cssClasses.splice(-1);
+          cssClasses.push(animationName);
+          document.getElementById(overlayName).className = cssClasses.join(" ");
+
+          cssClasses.splice(-1);
+          setTimeout(function () {
+            document.getElementById(overlayName).className = cssClasses.join(" ");
+          }, 1100);
+        }
+        var vids = document.getElementsByTagName("video");
+        if (vids) {
+          for (var i = 0; i < vids.length; i++) {
+            var video = vids.item(i);
+            video.pause();
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

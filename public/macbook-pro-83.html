@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/tutorialstep1.css" />
+    <link rel="stylesheet" type="text/css" href="css/dropdownmeny.css" />
+    <link rel="stylesheet" type="text/css" href="css/macbook-pro-83.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Rubik:400,300,700,500|Rubik+Mono+One:400|Roboto:400,700,500");
+
+      .component-wrapper a,
+      .screen a {
+        text-decoration: none;
+        display: contents;
+      }
+
+      .full-width-a {
+        width: 100%;
+      }
+
+      .full-height-a {
+        height: 100%;
+      }
+
+      .screen textarea:focus,
+      .screen input:focus {
+        outline: none;
+      }
+
+      .screen *,
+      .component-wrapper * {
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .screen div {
+        -webkit-text-size-adjust: none;
+      }
+
+      .container-center-vertical,
+      .container-center-horizontal {
+        pointer-events: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container-center-vertical {
+        align-items: center;
+        height: 100%;
+      }
+
+      .container-center-horizontal {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .container-center-vertical > *,
+      .container-center-horizontal > * {
+        pointer-events: auto;
+        flex-shrink: 0;
+      }
+
+      .component-wrapper,
+      .screen {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+      }
+
+      .auto-animated div {
+        opacity: 0;
+        position: absolute;
+        --z-index: -1;
+      }
+
+      .auto-animated .container-center-vertical,
+      .auto-animated .container-center-horizontal {
+        opacity: 1;
+      }
+
+      .overlay {
+        position: absolute;
+        opacity: 0;
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+
+      .animate-appear {
+        opacity: 0;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 normal forwards;
+      }
+
+      .animate-disappear {
+        opacity: 1;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 reverse forwards;
+      }
+
+      .animate-nodelay {
+        animation-delay: 0s;
+      }
+
+      @keyframes reveal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+      .align-self-flex-center {
+        align-self: center;
+      }
+      .valign-text-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .valign-text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      input:focus {
+        outline: none;
+      }
+      .component-wrapper,
+      .component-wrapper * {
+        pointer-events: none;
+      }
+
+      .component-wrapper a *,
+      .component-wrapper a,
+      .component-wrapper input,
+      .component-wrapper video,
+      .component-wrapper iframe,
+      .listeners-active,
+      .listeners-active * {
+        pointer-events: auto;
+      }
+
+      .hidden,
+      .hidden * {
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .smart-layers-pointers,
+      .smart-layers-pointers * {
+        pointer-events: auto;
+        visibility: visible;
+      }
+
+      .component-wrapper.not-ready,
+      .component-wrapper.not-ready * {
+        visibility: hidden !important;
+      }
+
+      .listeners-active-click,
+      .listeners-active-click * {
+        cursor: pointer;
+      }
+
+      @import url("https://fonts.googleapis.com/css?family=Rubik:400,300,700,500|Rubik+Mono+One:400|Roboto:400,700,500");
+      * {
+        box-sizing: border-box;
+      }
+      .border-0-6px-black {
+        border: 0.6px solid var(--black);
+      }
+      .border-0-8px-black {
+        border: 0.8px solid var(--black);
+      }
+      .border-0-9px-white {
+        border: 0.9px solid var(--white);
+      }
+      .border-1px-black {
+        border: 1px solid var(--black);
+      }
+      .border-1px-fuscous-gray {
+        border: 1px solid var(--fuscous-gray);
+      }
+      .border-1px-white {
+        border: 1px solid var(--white);
+      }
+      .rubik-bold-black-16px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-16px);
+        font-style: normal;
+        font-weight: 700;
+      }
+      .rubik-bold-black-18px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-18px);
+        font-style: normal;
+        font-weight: 700;
+      }
+      .rubik-bold-black-37-9px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-37_9px);
+        font-style: normal;
+        font-weight: 700;
+      }
+      .rubik-medium-black-16px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-16px);
+        font-style: normal;
+        font-weight: 500;
+      }
+      .rubik-medium-chicago-36px {
+        color: rgba(94, 94, 94, 1);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-36px);
+        font-style: normal;
+        font-weight: 500;
+      }
+      .rubik-normal-black-14px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-14px);
+        font-style: normal;
+        font-weight: 400;
+      }
+      .rubik-normal-black-16px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-16px);
+        font-style: normal;
+        font-weight: 400;
+      }
+      .rubik-normal-dove-gray-14px {
+        color: var(--dove-gray);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-14px);
+        font-style: normal;
+        font-weight: 400;
+      }
+      .rubik-normal-fuscous-gray-16px {
+        color: var(--fuscous-gray);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-16px);
+        font-style: normal;
+        font-weight: 400;
+      }
+      .rubik-normal-wild-sand-16px {
+        color: var(--wild-sand);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-16px);
+        font-style: normal;
+        font-weight: 400;
+      }
+      :root {
+        --black: rgba(0, 0, 0, 1);
+        --celeste: rgba(207, 207, 207, 1);
+        --dove-gray: rgba(110, 110, 110, 1);
+        --font-family-rubik: "Rubik", Helvetica;
+        --font-size-14px: 14px;
+        --font-size-16px: 16px;
+        --font-size-18px: 18px;
+        --font-size-36px: 36px;
+        --font-size-37_9px: 37.9px;
+        --fuscous-gray: rgba(84, 84, 84, 1);
+        --hint-of-red: rgba(249, 249, 249, 1);
+        --mercury: rgba(230, 230, 230, 1);
+        --mist-gray: rgba(196, 196, 196, 1);
+        --pink-swan: rgba(183, 183, 183, 1);
+        --white: rgba(255, 255, 255, 1);
+        --wild-sand: rgba(244, 244, 244, 1);
+      }
+    </style>
+    <meta name="author" content="AnimaApp.com - Design to code, Automated." />
+  </head>
+  <body style="margin: 0; background: rgba(244, 244, 244, 1)">
+    <input type="hidden" id="anPageName" name="page" value="macbook-pro-83" />
+    <div class="container-center-horizontal">
+      <div
+        class="macbook-pro-83 screen"
+        onclick="window.open('javascript:ShowOverlay(%27tutorialstep1%27%2C%20%27animate-appear%27);', '_self');"
+      >
+        <div class="menubarinloggad-C61RwL">
+          <a href="loggedinlandingpage.html" onclick="window.event.stopPropagation()" class="align-self-flex-center">
+            <div class="loggo-bxgaHT">
+              <div class="ookstep-i10642981067196-58J6IH rubik-bold-black-37-9px">ookstep</div>
+              <div class="logo2bookstep-1-58J6IH"></div>
+              <img class="b-logo-3-58J6IH" src="img/b-logo-3@2x.png" /></div
+          ></a>
+          <a href="loggedinlandingpage.html" onclick="window.event.stopPropagation()"
+            ><div class="hem-i10642981067180-bxgaHT rubik-normal-black-16px">Hem</div></a
+          >
+          <a href="productpage.html" onclick="window.event.stopPropagation()" class="align-self-flex-center"
+            ><div class="bcker-i10642981067179-bxgaHT rubik-normal-black-16px">Böcker</div></a
+          >
+          <div class="om-oss-i10642981067178-bxgaHT rubik-normal-black-16px">Om oss</div>
+          <div class="kontakt-i10642981067177-bxgaHT rubik-normal-black-16px">Kontakt</div>
+          <a href="javascript:ShowOverlay('dropdownmeny', 'animate-appear');" onclick="window.event.stopPropagation()">
+            <div class="profil-bxgaHT">
+              <div class="anvndarnamn-i10642981067193-HCfW0l rubik-normal-black-16px">Användarnamn</div>
+              <img class="vector-HCfW0l" src="img/vector-12@2x.svg" />
+              <div class="profile-HCfW0l">
+                <div class="bxbx-user-LV8roB">
+                  <img class="vector-d0PgHK" src="img/vector@2x.png" />
+                  <img class="vector-xoDvf6" src="img/vector-24@2x.svg" />
+                </div>
+              </div></div
+          ></a>
+          <a href="index-landingpage.html" onclick="window.event.stopPropagation()">
+            <div class="loggaut-bxgaHT border-1px-fuscous-gray">
+              <div class="logga-ut-i10642981067182-wQXDsF rubik-normal-fuscous-gray-16px">Logga ut</div>
+              <div class="group-wQXDsF">
+                <img class="vector-Tu5MOb" src="img/vector-19@2x.svg" />
+                <img class="vector-5IUgZZ" src="img/vector-10@2x.svg" />
+                <img class="vector-ecSiqR" src="img/vector-11@2x.svg" />
+              </div></div
+          ></a>
+        </div>
+        <div class="flex-row-C61RwL">
+          <div class="group-673-dXBp89">
+            <div class="group-404-blwVIj">
+              <div class="overlap-group2-KtOGF4">
+                <img class="ellipse-268-1YHgtX" src="img/ellipse-268-2@2x.svg" />
+                <img class="ellipse-269-1YHgtX" src="img/ellipse-269-2@2x.svg" />
+                <div class="x2500-steg-1YHgtX">2500 steg</div>
+                <div class="till-nsta-kapitel-1YHgtX">
+                  <span class="span0-3IqeBo">Till nästa kapitel</span><span class="span1-3IqeBo">&nbsp;</span>
+                </div>
+              </div>
+              <div class="flex-col-KtOGF4">
+                <div class="bok-VGG1xO">Bok:</div>
+                <div class="overlap-group3-VGG1xO">
+                  <div class="kapitel-H3Pn6m">Kapitel:</div>
+                  <img class="ellipse-270-H3Pn6m" src="img/ellipse-270-2@2x.svg" />
+                  <div class="x1-H3Pn6m">1</div>
+                </div>
+                <div class="overlap-group4-VGG1xO">
+                  <img class="ellipse-276-PgojMG" src="img/ellipse-276-2@2x.svg" />
+                  <div class="x7-PgojMG">7</div>
+                </div>
+                <div class="overlap-group5-VGG1xO">
+                  <img class="ellipse-282-4FRgX7" src="img/ellipse-282-2@2x.svg" />
+                  <div class="x13-4FRgX7">13</div>
+                </div>
+              </div>
+              <div class="flex-col-8vZVlG">
+                <div class="overlap-group8-ia0dox">
+                  <img class="ellipse-271-jN1xVH" src="img/ellipse-271-2@2x.svg" />
+                  <div class="x2-jN1xVH">2</div>
+                </div>
+                <div class="overlap-group9-ia0dox">
+                  <img class="ellipse-278-n1EZ8Q" src="img/ellipse-278-2@2x.svg" />
+                  <div class="x8-n1EZ8Q">8</div>
+                </div>
+                <div class="overlap-group10-ia0dox">
+                  <img class="ellipse-284-FNnoVy" src="img/ellipse-284-2@2x.svg" />
+                  <div class="x14-FNnoVy">14</div>
+                </div>
+              </div>
+              <div class="flex-col-GRg9Pr">
+                <div class="overlap-group13-5bXw8T">
+                  <img class="ellipse-272-5x9XWS" src="img/ellipse-272-2@2x.svg" />
+                  <div class="x3-5x9XWS">3</div>
+                </div>
+                <div class="overlap-group14-5bXw8T">
+                  <img class="ellipse-280-Owmii4" src="img/ellipse-280-2@2x.svg" />
+                  <div class="x9-Owmii4">9</div>
+                </div>
+              </div>
+              <div class="flex-col-mg4xZt">
+                <div class="overlap-group6-LW5q8w">
+                  <img class="ellipse-273-IdVPB7" src="img/ellipse-273-2@2x.svg" />
+                  <div class="x4-IdVPB7">4</div>
+                </div>
+                <div class="overlap-group7-LW5q8w">
+                  <img class="ellipse-277-dW3Oyu" src="img/ellipse-277-2@2x.svg" />
+                  <div class="x10-dW3Oyu">10</div>
+                </div>
+              </div>
+              <div class="flex-col-RCMvP4">
+                <div class="overlap-group11-OspJKi">
+                  <img class="ellipse-274-in2BD7" src="img/ellipse-274-2@2x.svg" />
+                  <div class="x5-in2BD7">5</div>
+                </div>
+                <div class="overlap-group12-OspJKi">
+                  <img class="ellipse-279-Gbds7m" src="img/ellipse-279-2@2x.svg" />
+                  <div class="x11-Gbds7m">11</div>
+                </div>
+              </div>
+              <div class="flex-col-mJ44eC">
+                <div class="overlap-group15-auuiKh">
+                  <img class="ellipse-275-bdNoKK" src="img/ellipse-275-2@2x.svg" />
+                  <div class="x6-bdNoKK">6</div>
+                </div>
+                <div class="overlap-group16-auuiKh">
+                  <img class="ellipse-281-ryBF2B" src="img/ellipse-281-2@2x.svg" />
+                  <div class="x12-ryBF2B">12</div>
+                </div>
+              </div>
+            </div>
+            <div class="the-clean-startup-blwVIj">The Clean Startup</div>
+          </div>
+          <div class="group-584-dXBp89">
+            <div class="rectangle-1297-NY6Ocx"></div>
+          </div>
+        </div>
+        <div class="overlap-group-C61RwL">
+          <div class="rectangle-374-4eduM0"></div>
+          <div class="rectangle-375-4eduM0"></div>
+          <div class="bsta-bckerna-at-tivationen-igng-4eduM0">Bästa böckerna att hålla motions motivationen igång</div>
+          <div class="group-420-4eduM0">
+            <div class="group-419-5XBeDx">
+              <div class="group-372-eVHDRt border-0-8px-black"></div>
+              <div class="se-all-30-000-bcker-eVHDRt">Se all 30 000 böcker</div>
+            </div>
+          </div>
+          <div class="group-416-4eduM0">
+            <div class="group-415-xaRuvV">
+              <div class="rectangle-436-aYvbkH"></div>
+              <div class="rectangle-437-aYvbkH"></div>
+              <img class="vector-240-aYvbkH" src="img/vector-240-8@2x.svg" />
+              <img class="vector-241-aYvbkH" src="img/vector-241-8@2x.svg" />
+              <img class="rectangle-440-aYvbkH" src="img/rectangle-440-1@2x.svg" />
+              <div class="x77-aYvbkH rubik-normal-black-16px">7.7</div>
+              <img class="star-1-aYvbkH" src="img/star-1-1@2x.svg" />
+              <div class="lorem-ipsum-dol-iquam-convallis-aYvbkH rubik-normal-black-16px">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam convallis.
+              </div>
+              <div class="boktitel-aYvbkH rubik-bold-black-18px">Boktitel</div>
+              <div class="group-470-aYvbkH">
+                <div class="group-367-V8FHcb">
+                  <div class="rectangle-422-VM0xCK"></div>
+                  <div class="vlj-VM0xCK rubik-normal-black-14px">välj</div>
+                </div>
+                <div class="group-368-V8FHcb">
+                  <div class="rectangle-423-Wmbz4r border-0-6px-black"></div>
+                  <div class="spara-till-favoriter-Wmbz4r rubik-normal-black-14px">spara till favoriter</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="group-436-4eduM0">
+            <div class="group-415-Qig0En">
+              <div class="rectangle-436-hLI0Ul"></div>
+              <div class="rectangle-437-hLI0Ul"></div>
+              <img class="vector-240-hLI0Ul" src="img/vector-240-9@2x.svg" />
+              <img class="vector-241-hLI0Ul" src="img/vector-241-9@2x.svg" />
+              <div class="lorem-ipsum-dol-iquam-convallis-hLI0Ul rubik-normal-black-16px">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam convallis.
+              </div>
+              <div class="boktitel-hLI0Ul rubik-bold-black-18px">Boktitel</div>
+              <div class="group-470-hLI0Ul">
+                <div class="group-367-zBRj0c">
+                  <div class="rectangle-422-3MLyjT"></div>
+                  <div class="vlj-3MLyjT rubik-normal-black-14px">välj</div>
+                </div>
+                <div class="group-368-zBRj0c">
+                  <div class="rectangle-423-PVx8dD border-0-6px-black"></div>
+                  <div class="spara-till-favoriter-PVx8dD rubik-normal-black-14px">spara till favoriter</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="rectangle-440-4eduM0" src="img/rectangle-440@2x.svg" />
+          <div class="x77-4eduM0 rubik-normal-black-16px">7.7</div>
+          <img class="star-1-4eduM0" src="img/star-1@2x.svg" />
+          <div class="group-461-4eduM0">
+            <div class="group-415-k0YgIR">
+              <div class="rectangle-436-bNhJuM"></div>
+              <div class="rectangle-437-bNhJuM"></div>
+              <img class="rectangle-440-bNhJuM" src="img/rectangle-440@2x.svg" />
+              <div class="x77-bNhJuM rubik-normal-black-16px">7.7</div>
+              <img class="star-1-bNhJuM" src="img/star-1-2@2x.svg" />
+              <img class="vector-240-bNhJuM" src="img/vector-240-9@2x.svg" />
+              <img class="vector-241-bNhJuM" src="img/vector-241-9@2x.svg" />
+              <div class="lorem-ipsum-dol-iquam-convallis-bNhJuM rubik-normal-black-16px">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam convallis.
+              </div>
+              <div class="boktitel-bNhJuM rubik-bold-black-18px">Boktitel</div>
+              <div class="group-470-bNhJuM">
+                <div class="group-367-t6M0eL">
+                  <div class="rectangle-422-Rl4jYY"></div>
+                  <div class="vlj-Rl4jYY rubik-normal-black-14px">välj</div>
+                </div>
+                <div class="group-368-t6M0eL">
+                  <div class="rectangle-423-KwGpUO border-0-6px-black"></div>
+                  <div class="spara-till-favoriter-KwGpUO rubik-normal-black-14px">spara till favoriter</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="group-438-4eduM0">
+            <div class="group-415-WNqFKh">
+              <div class="rectangle-436-iI3U4E"></div>
+              <div class="rectangle-437-iI3U4E"></div>
+              <img class="vector-240-iI3U4E" src="img/vector-240-9@2x.svg" />
+              <img class="vector-241-iI3U4E" src="img/vector-241-9@2x.svg" />
+              <div class="lorem-ipsum-dol-iquam-convallis-iI3U4E rubik-normal-black-16px">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam convallis.
+              </div>
+              <div class="boktitel-iI3U4E rubik-bold-black-18px">Boktitel</div>
+              <div class="group-470-iI3U4E">
+                <div class="group-367-soQ2le">
+                  <div class="rectangle-422-6UkKc1"></div>
+                  <div class="vlj-6UkKc1 rubik-normal-black-14px">välj</div>
+                </div>
+                <div class="group-368-soQ2le">
+                  <div class="rectangle-423-poWdO8 border-0-6px-black"></div>
+                  <div class="spara-till-favoriter-poWdO8 rubik-normal-black-14px">spara till favoriter</div>
+                </div>
+              </div>
+              <img class="rectangle-440-iI3U4E" src="img/rectangle-440@2x.svg" />
+              <div class="x77-iI3U4E rubik-normal-black-16px">7.7</div>
+              <img class="star-1-iI3U4E" src="img/star-1@2x.svg" />
+            </div>
+          </div>
+          <div class="group-417-4eduM0"><img class="vector-242-m5S9og" src="img/vector-242-4@2x.svg" /></div>
+          <div class="group-418-4eduM0">
+            <img class="ellipse-306-U4mRWM" src="img/ellipse-306-1@2x.svg" />
+            <img class="vector-242-U4mRWM" src="img/vector-242-5@2x.svg" />
+          </div>
+          <div class="group-446-4eduM0 border-1px-black">
+            <img class="vector-249-81eaGx" src="img/vector-249-4@2x.svg" />
+            <img class="vector-250-81eaGx" src="img/vector-250-4@2x.svg" />
+          </div>
+          <div class="kom-ut-till-en-telse-varje-dag-4eduM0">Kom ut till en ny berättelse varje dag.</div>
+          <div class="anvndare-kan-nu-och-google-play-4eduM0">
+            Användare kan nu synkronisera Bookstep med de senaste träningsapparna från App Store och Google Play.
+          </div>
+          <div class="group-511-4eduM0">
+            <div class="rectangle-556-sOcflr"></div>
+            <img class="vector-sOcflr" src="img/vector-5@2x.svg" />
+            <div class="download-from-app-store-sOcflr">
+              <span class="span0-9B4Svv">DOWNLOAD FROM<br /></span><span class="span1-9B4Svv">APP STORE</span>
+            </div>
+          </div>
+          <div class="group-513-4eduM0">
+            <div class="group-512-Epa7Hc">
+              <div class="rectangle-556-Q7CNTK"></div>
+              <div class="download-from-google-play-Q7CNTK">
+                <span class="span0-rK4C3z">DOWNLOAD FROM<br /></span><span class="span1-rK4C3z">Google play</span>
+              </div>
+            </div>
+            <img class="vector-Epa7Hc" src="img/vector-3@2x.svg" />
+          </div>
+        </div>
+        <div class="overlap-group1-C61RwL">
+          <div class="rectangle-384-RH0WJ5"></div>
+          <div class="group-332-RH0WJ5">
+            <div class="group-330-xLOVcU">
+              <div class="hem-RN0raT rubik-normal-wild-sand-16px">Hem</div>
+              <div class="bcker-RN0raT rubik-normal-wild-sand-16px">Böcker</div>
+              <div class="om-oss-RN0raT rubik-normal-wild-sand-16px">Om oss</div>
+              <div class="logga-in-RN0raT rubik-normal-wild-sand-16px">Logga in</div>
+              <div class="skapa-konto-gratis-RN0raT rubik-normal-wild-sand-16px">Skapa konto gratis</div>
+            </div>
+          </div>
+          <div class="group-422-RH0WJ5">
+            <img class="vector-Ux0CEY" src="img/vector-1@2x.svg" />
+            <div class="group-Ux0CEY"></div>
+          </div>
+        </div>
+        <div class="rectangle-435-C61RwL"></div>
+      </div>
+    </div>
+    <div id="overlay-dropdownmeny" class="overlay" style="min-height: 2752px">
+      <div class="container-center-horizontal">
+        <div class="dropdownmeny screen">
+          <img class="vector-C61RwL" src="img/vector@2x.svg" />
+          <div class="frame-26-C61RwL">
+            <a href="macbook-pro-78.html"><div class="pgende-bok-yS5w2I">Pågående bok</div></a>
+            <a href="frame-18.html"><div class="profil-yS5w2I">Profil</div></a>
+            <div class="bokteam-yS5w2I">Bokteam</div>
+            <div class="statistik-yS5w2I">Statistik</div>
+            <a href="macbook-pro-79.html"><div class="instllningar-yS5w2I">Inställningar</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var overlay_id = "overlay-dropdownmeny";
+      document.getElementById(overlay_id).addEventListener(
+        "click",
+        function (event) {
+          var e = event || window.event;
+          var clickedDiv = e.toElement || e.target;
+          if (clickedDiv.parentElement.id == overlay_id) {
+            HideOverlay("dropdownmeny", "animate-disappear");
+          }
+        },
+        false
+      );
+    </script>
+    <div id="overlay-tutorialstep1" class="overlay" style="min-height: 2752px">
+      <div class="container-center-horizontal">
+        <div class="tutorialstep1 screen">
+          <div class="vlj-en-bok-C61RwL">Välj en bok</div>
+          <div class="vlj-en-av-books-ett-sundare-liv-C61RwL">
+            Välj en av Booksteps 30.000 boktitlar och starta din resa mot ett sundare liv.
+          </div>
+          <div class="overlap-group-C61RwL">
+            <div class="rectangle-1298-4eduM0"></div>
+            <div class="nsta-4eduM0">Nästa</div>
+          </div>
+          <div class="group-406-C61RwL">
+            <img class="ellipse-302-5hxNt9" src="img/ellipse-302-1@2x.svg" />
+            <img class="ellipse-303-5hxNt9" src="img/ellipse-303-1@2x.svg" />
+            <img class="ellipse-304-5hxNt9" src="img/ellipse-304-1@2x.svg" />
+          </div>
+          <a href="loggedinlandingpage.html"><div class="skip-C61RwL">skip</div></a>
+        </div>
+      </div>
+    </div>
+    <script>
+      var overlay_id = "overlay-tutorialstep1";
+      document.getElementById(overlay_id).addEventListener(
+        "click",
+        function (event) {
+          var e = event || window.event;
+          var clickedDiv = e.toElement || e.target;
+          if (clickedDiv.parentElement.id == overlay_id) {
+            HideOverlay("tutorialstep1", "animate-disappear");
+          }
+        },
+        false
+      );
+    </script>
+    <script>
+      ShowOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
+        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var last = cssClasses.slice(-1)[0];
+        if (last.lastIndexOf("animate") == -1) {
+          document.getElementById(overlayName).className =
+            document.getElementById(overlayName).className + " " + animationName;
+        }
+        if (window.loadAsyncSrc != undefined) {
+          loadAsyncSrc();
+        }
+      };
+      HideOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
+        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var last = cssClasses.slice(-1)[0];
+        if (last.lastIndexOf("animate") != -1) {
+          cssClasses.splice(-1);
+          cssClasses.push(animationName);
+          document.getElementById(overlayName).className = cssClasses.join(" ");
+
+          cssClasses.splice(-1);
+          setTimeout(function () {
+            document.getElementById(overlayName).className = cssClasses.join(" ");
+          }, 1100);
+        }
+        var vids = document.getElementsByTagName("video");
+        if (vids) {
+          for (var i = 0; i < vids.length; i++) {
+            var video = vids.item(i);
+            video.pause();
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

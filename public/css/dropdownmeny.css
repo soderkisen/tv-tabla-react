@@ -1,0 +1,134 @@
+/* screen - dropdownmeny */
+
+#overlay-dropdownmeny {
+  background-color: rgba(53,53,53,1.0);
+}
+.dropdownmeny {
+  align-items: flex-end;
+  background-color: rgba(53,53,53,1.0);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: flex-start;
+  min-height: 145px;
+  overflow-x: hidden;
+  padding: 13.0px 421px;
+  position: relative;
+  width: 1440px;
+}
+.dropdownmeny .bokteam-yS5w2I {
+  background-color: transparent;
+  color: var(--white);
+  flex-shrink: 1;
+  font-family: 'Rubik', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-left: 16px;
+  min-height: 24px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: 99px;
+}
+.dropdownmeny .frame-26-C61RwL {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 24px;
+  justify-content: flex-start;
+  margin-top: 42px;
+  min-width: 578px;
+  position: relative;
+  width: auto;
+}
+.dropdownmeny .instllningar-yS5w2I {
+  background-color: transparent;
+  color: var(--white);
+  flex-shrink: 1;
+  font-family: 'Rubik', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-left: 16px;
+  min-height: 24px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: 99px;
+}
+.dropdownmeny .pgende-bok-yS5w2I {
+  background-color: transparent;
+  color: var(--white);
+  flex-shrink: 1;
+  font-family: 'Rubik', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 119px;
+}
+.dropdownmeny .profil-yS5w2I {
+  background-color: transparent;
+  color: var(--white);
+  flex-shrink: 1;
+  font-family: 'Rubik', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-left: 16px;
+  min-height: 24px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: 98px;
+}
+.dropdownmeny .statistik-yS5w2I {
+  background-color: transparent;
+  color: var(--white);
+  flex-shrink: 1;
+  font-family: 'Rubik', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-left: 16px;
+  min-height: 24px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: 99px;
+}
+.dropdownmeny .vector-C61RwL {
+  align-self: center;
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 10px;
+  margin-left: 20.0px;
+  position: relative;
+  width: 16px;
+}
+.overlay .dropdownmeny {
+  background-color: #00000000;
+}

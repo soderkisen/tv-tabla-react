@@ -1,0 +1,1017 @@
+/* screen - signin */
+
+.signin {
+  align-items: flex-end;
+  background-color: var(--wild-sand);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 1388px;
+  justify-content: flex-start;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1440px;
+}
+.signin .b-logo-3-MJiU2I {
+  background-color: transparent;
+  height: 34px;
+  left: -0px;
+  object-fit: cover;
+  position: absolute;
+  top: 5px;
+  width: 39px;
+}
+.signin .bcker-UsHvxH {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-bottom: -0.0px;
+  margin-left: 34px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 71px;
+}
+.signin .bcker-mZdJQv {
+  align-self: center;
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-left: 79px;
+  margin-top: 11.0px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 70px;
+}
+.signin .bekrfta-din-e-post-mQPLvo {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  margin-top: 22px;
+  min-height: 19px;
+  min-width: 153px;
+  position: relative;
+  text-align: left;
+  width: auto;
+}
+.signin .e-post-mQPLvo {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  margin-top: 18px;
+  min-height: 19px;
+  min-width: 55px;
+  position: relative;
+  text-align: left;
+  width: auto;
+}
+.signin .efternamn-mQPLvo {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  margin-top: 22px;
+  min-height: 19px;
+  min-width: 85px;
+  position: relative;
+  text-align: left;
+  width: auto;
+}
+.signin .ellipse-360-BrtgRD {
+  background-color: transparent;
+  height: 9px;
+  left: 3px;
+  position: absolute;
+  top: -0px;
+  width: 9px;
+}
+.signin .ellipse-360-KZgL9X {
+  background-color: transparent;
+  height: 9px;
+  left: 3px;
+  position: absolute;
+  top: -0px;
+  width: 9px;
+}
+.signin .ellipse-361-xzRWyb {
+  background-color: transparent;
+  height: 10px;
+  left: -0px;
+  position: absolute;
+  top: -0px;
+  width: 10px;
+}
+.signin .flex-col-dXBp89 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  height: auto;
+  justify-content: flex-start;
+  margin-bottom: 20.88px;
+  min-height: 595px;
+  position: relative;
+  width: 311px;
+}
+.signin .flex-row-C61RwL {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 660px;
+  justify-content: flex-start;
+  margin-right: 25px;
+  margin-top: 24px;
+  min-width: 861px;
+  position: relative;
+  width: auto;
+}
+.signin .fortstt-AxBYjz {
+  background-color: transparent;
+  color: var(--white);
+  font-family: 'Rubik', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 49px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 6px;
+  width: auto;
+}
+.signin .frnamn-mQPLvo {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  min-height: 19px;
+  min-width: 72px;
+  position: relative;
+  text-align: left;
+  width: auto;
+}
+.signin .group-330-fF6HMg {
+  align-items: flex-end;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 17px;
+  justify-content: flex-start;
+  min-width: 604px;
+  position: relative;
+  width: auto;
+}
+.signin .group-332-4eduM0 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 17px;
+  justify-content: flex-start;
+  left: 423px;
+  min-width: 594px;
+  position: absolute;
+  top: 213px;
+  width: auto;
+}
+.signin .group-372-AY0nkn {
+  background-color: var(--fuscous-gray);
+  border-radius: 15.833860397338867px;
+  flex-shrink: 1;
+  height: 31px;
+  position: relative;
+  width: 162px;
+}
+.signin .group-419-7Nmhey {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 31px;
+  justify-content: flex-start;
+  min-width: 162px;
+  position: relative;
+  width: auto;
+}
+.signin .group-420-hlRTvN {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 31px;
+  justify-content: flex-start;
+  min-width: 162px;
+  position: relative;
+  width: auto;
+}
+.signin .group-422-4eduM0 {
+  align-items: flex-end;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 38px;
+  justify-content: flex-start;
+  left: 670px;
+  min-width: 100px;
+  position: absolute;
+  top: 317px;
+  width: auto;
+}
+.signin .group-454-eEcNcc {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 31px;
+  justify-content: flex-start;
+  min-width: 162px;
+  position: relative;
+  width: auto;
+}
+.signin .group-461-AxBYjz {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 31px;
+  justify-content: flex-start;
+  left: 0px;
+  min-width: 162px;
+  position: absolute;
+  top: 0px;
+  width: auto;
+}
+.signin .group-493-cIJoH5 {
+  background-color: transparent;
+  height: 31px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 296px;
+}
+.signin .group-494-nnRnSl {
+  background-color: transparent;
+  height: 31px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 296px;
+}
+.signin .group-495-6QPYf5 {
+  background-color: transparent;
+  height: 31px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 296px;
+}
+.signin .group-496-u7SQcl {
+  background-color: transparent;
+  height: 31px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 296px;
+}
+.signin .group-497-heIZWd {
+  background-color: transparent;
+  height: 31px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 296px;
+}
+.signin .group-498-cIJoH5 {
+  background-color: transparent;
+  height: 16px;
+  left: 11px;
+  position: absolute;
+  top: 8px;
+  width: 15px;
+}
+.signin .group-499-nnRnSl {
+  background-color: transparent;
+  height: 16px;
+  left: 11px;
+  position: absolute;
+  top: 8px;
+  width: 15px;
+}
+.signin .group-500-6QPYf5 {
+  background-color: transparent;
+  height: 11px;
+  left: 11px;
+  position: absolute;
+  top: 10px;
+  width: 17px;
+}
+.signin .group-501-u7SQcl {
+  background-color: transparent;
+  height: 11px;
+  left: 11px;
+  position: absolute;
+  top: 11px;
+  width: 17px;
+}
+.signin .group-502-heIZWd {
+  background-color: transparent;
+  height: 10px;
+  left: 9px;
+  position: absolute;
+  top: 11px;
+  width: 22px;
+}
+.signin .group-503-0PZcXW {
+  align-self: center;
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 31px;
+  margin-left: 23.0px;
+  margin-top: 69px;
+  position: relative;
+  width: 164px;
+}
+.signin .group-527-0PZcXW {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  height: auto;
+  justify-content: flex-start;
+  margin-top: 40px;
+  min-height: 417px;
+  position: relative;
+  width: 311px;
+}
+.signin .group-584-dXBp89 {
+  -webkit-backdrop-filter: blur(18px) brightness(100%);
+  align-items: flex-start;
+  backdrop-filter: blur(18px) brightness(100%);
+  background-color: rgba(115,115,115,0.25);
+  border-radius: 10.5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 660px;
+  justify-content: flex-start;
+  margin-left: 529px;
+  min-width: 21px;
+  padding: 2.6px 2px;
+  position: relative;
+  width: auto;
+}
+.signin .group-9nI8mc {
+  background-color: transparent;
+  background-image: url(../img/vector-2@2x.svg);
+  background-size: 100% 100%;
+  flex-shrink: 1;
+  height: 35px;
+  margin-bottom: 0.17px;
+  margin-left: 27px;
+  position: relative;
+  width: 35px;
+}
+.signin .hem-UsHvxH {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 71px;
+}
+.signin .hem-mZdJQv {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-bottom: 2px;
+  margin-left: 124px;
+  min-height: 24px;
+  min-width: 38px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.signin .kontakt-mZdJQv {
+  align-self: center;
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-left: 58px;
+  margin-top: 11.0px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 149px;
+}
+.signin .logga-in-U1iV6o {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  min-height: 19px;
+  position: relative;
+  text-align: center;
+  width: 176px;
+}
+.signin .logga-in-UsHvxH {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-bottom: -0.0px;
+  margin-left: 34px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 71px;
+}
+.signin .loggain-mZdJQv {
+  align-items: center;
+  background-color: transparent;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 33px;
+  justify-content: flex-start;
+  margin-bottom: 1px;
+  margin-left: 174px;
+  overflow: hidden;
+  position: relative;
+  width: 174px;
+}
+.signin .loggo-mZdJQv {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 45px;
+  position: relative;
+  width: 190px;
+}
+.signin .logo2bookstep-1-MJiU2I {
+  background-color: transparent;
+  height: 28px;
+  left: 10px;
+  position: absolute;
+  top: 8px;
+  width: 33px;
+}
+.signin .menubar-C61RwL {
+  align-items: flex-end;
+  background-color: var(--wild-sand);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 164px;
+  justify-content: flex-end;
+  min-width: 1440px;
+  padding: 59px 30px;
+  position: relative;
+  width: auto;
+}
+.signin .om-oss-UsHvxH {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-bottom: -0.0px;
+  margin-left: 34px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 71px;
+}
+.signin .om-oss-mZdJQv {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-bottom: 2px;
+  margin-left: 46px;
+  min-height: 24px;
+  min-width: 59px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.signin .ookstep-MJiU2I {
+  background-color: transparent;
+  height: auto;
+  left: 36px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: -0px;
+  width: 155px;
+}
+.signin .overlap-group-C61RwL {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 489px;
+  margin-top: 51px;
+  position: relative;
+  width: 1440px;
+}
+.signin .overlap-group1-mQPLvo {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 31px;
+  margin-left: 1px;
+  margin-top: 14px;
+  position: relative;
+  width: 296px;
+}
+.signin .overlap-group2-mQPLvo {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 31px;
+  margin-left: 1px;
+  margin-top: 14px;
+  position: relative;
+  width: 296px;
+}
+.signin .overlap-group3-mQPLvo {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 31px;
+  margin-left: 1px;
+  margin-top: 14px;
+  position: relative;
+  width: 296px;
+}
+.signin .overlap-group4-mQPLvo {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 31px;
+  margin-left: 1px;
+  margin-top: 14px;
+  position: relative;
+  width: 296px;
+}
+.signin .overlap-group5-mQPLvo {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 31px;
+  margin-left: 1px;
+  margin-top: 18px;
+  position: relative;
+  width: 296px;
+}
+.signin .prova-bookstep-Pog5F0 {
+  background-color: transparent;
+  color: var(--white);
+  flex-shrink: 1;
+  font-family: 'Rubik', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  min-height: 19px;
+  position: relative;
+  text-align: center;
+  width: 176px;
+}
+.signin .rectangle-1297-NY6Ocx {
+  background-color: rgba(86,86,86,1.0);
+  border-radius: 8.542372703552246px;
+  flex-shrink: 1;
+  height: 83px;
+  position: relative;
+  width: 17px;
+}
+.signin .rectangle-384-4eduM0 {
+  background-color: rgba(30,30,30,1.0);
+  height: 489px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1440px;
+}
+.signin .rectangle-449-II1tJ8 {
+  background-color: var(--mercury);
+  height: 31px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 294px;
+}
+.signin .rectangle-449-KUxoWb {
+  background-color: var(--mercury);
+  height: 31px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 294px;
+}
+.signin .rectangle-449-VINZHW {
+  background-color: var(--mercury);
+  height: 31px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 294px;
+}
+.signin .rectangle-449-tKzuSm {
+  background-color: var(--mercury);
+  height: 31px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 294px;
+}
+.signin .rectangle-449-wrT54L {
+  background-color: var(--mercury);
+  height: 31px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 294px;
+}
+.signin .rectangle-451-6QPYf5 {
+  background-color: var(--mercury);
+  height: 31px;
+  left: 37px;
+  position: absolute;
+  top: 0px;
+  width: 257px;
+}
+.signin .rectangle-452-u7SQcl {
+  background-color: var(--mercury);
+  height: 31px;
+  left: 37px;
+  position: absolute;
+  top: 0px;
+  width: 257px;
+}
+.signin .rectangle-453-heIZWd {
+  background-color: var(--mercury);
+  height: 31px;
+  left: 37px;
+  position: absolute;
+  top: 0px;
+  width: 257px;
+}
+.signin .rectangle-549-RUD2yw {
+  background-color: rgba(78,78,78,1.0);
+  border-radius: 2.2666666507720947px;
+  height: 11px;
+  left: 0px;
+  position: absolute;
+  top: -0px;
+  width: 16px;
+}
+.signin .rectangle-549-emjsuv {
+  background-color: rgba(78,78,78,1.0);
+  border-radius: 2.2666666507720947px;
+  height: 11px;
+  left: 0px;
+  position: absolute;
+  top: -0px;
+  width: 16px;
+}
+.signin .registrera-mZdJQv {
+  align-items: center;
+  background-color: var(--fuscous-gray);
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 33px;
+  justify-content: flex-start;
+  margin-bottom: 2px;
+  margin-left: 9px;
+  overflow: hidden;
+  position: relative;
+  width: 174px;
+}
+.signin .skapa-konto-0PZcXW {
+  background-color: transparent;
+  color: var(--black);
+  flex-shrink: 1;
+  font-family: 'Roboto', Helvetica;
+  font-size: 32.6px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  min-height: 38px;
+  position: relative;
+  text-align: left;
+  width: 184px;
+}
+.signin .skapa-konto-gratis-UsHvxH {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-bottom: -0.0px;
+  margin-left: 51px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 154px;
+}
+.signin .skriv-hr-6QPYf5 {
+  background-color: transparent;
+  color: var(--pink-swan);
+  font-family: 'Roboto', Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 54px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 8px;
+  width: auto;
+}
+.signin .skriv-hr-II1tJ8 {
+  background-color: transparent;
+  color: var(--pink-swan);
+  font-family: 'Roboto', Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 54px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 8px;
+  width: auto;
+}
+.signin .skriv-hr-KUxoWb {
+  background-color: transparent;
+  color: var(--pink-swan);
+  font-family: 'Rubik', Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  height: auto;
+  left: 54px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 8px;
+  width: auto;
+}
+.signin .skriv-hr-VINZHW {
+  background-color: transparent;
+  color: var(--pink-swan);
+  font-family: 'Rubik', Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  height: auto;
+  left: 54px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 8px;
+  width: auto;
+}
+.signin .skriv-hr-heIZWd {
+  background-color: transparent;
+  color: var(--pink-swan);
+  font-family: 'Roboto', Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 54px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 8px;
+  width: auto;
+}
+.signin .skriv-hr-tKzuSm {
+  background-color: transparent;
+  color: var(--pink-swan);
+  font-family: 'Rubik', Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  height: auto;
+  left: 54px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 8px;
+  width: auto;
+}
+.signin .skriv-hr-u7SQcl {
+  background-color: transparent;
+  color: var(--pink-swan);
+  font-family: 'Roboto', Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 54px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 8px;
+  width: auto;
+}
+.signin .skriv-hr-wrT54L {
+  background-color: transparent;
+  color: var(--pink-swan);
+  font-family: 'Rubik', Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  height: auto;
+  left: 54px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 8px;
+  width: auto;
+}
+.signin .subtract-BrtgRD {
+  background-color: transparent;
+  height: 8px;
+  left: -0px;
+  position: absolute;
+  top: 8px;
+  width: 15px;
+}
+.signin .subtract-KZgL9X {
+  background-color: transparent;
+  height: 8px;
+  left: -0px;
+  position: absolute;
+  top: 8px;
+  width: 15px;
+}
+.signin .vector-397-II1tJ8 {
+  background-color: transparent;
+  height: 31px;
+  left: 39px;
+  position: absolute;
+  top: 0px;
+  width: 2px;
+}
+.signin .vector-397-KUxoWb {
+  background-color: transparent;
+  height: 31px;
+  left: 39px;
+  position: absolute;
+  top: 0px;
+  width: 2px;
+}
+.signin .vector-397-VINZHW {
+  background-color: transparent;
+  height: 31px;
+  left: 39px;
+  position: absolute;
+  top: 0px;
+  width: 2px;
+}
+.signin .vector-397-tKzuSm {
+  background-color: transparent;
+  height: 31px;
+  left: 39px;
+  position: absolute;
+  top: 0px;
+  width: 2px;
+}
+.signin .vector-397-wrT54L {
+  background-color: transparent;
+  height: 31px;
+  left: 39px;
+  position: absolute;
+  top: 0px;
+  width: 2px;
+}
+.signin .vector-398-RUD2yw {
+  background-color: transparent;
+  height: 7px;
+  left: -1px;
+  position: absolute;
+  top: 1px;
+  width: 19px;
+}
+.signin .vector-398-emjsuv {
+  background-color: transparent;
+  height: 7px;
+  left: -1px;
+  position: absolute;
+  top: 1px;
+  width: 19px;
+}
+.signin .vector-399-xzRWyb {
+  background-color: transparent;
+  height: 2px;
+  left: 9px;
+  position: absolute;
+  top: 4px;
+  width: 13px;
+}
+.signin .vector-400-xzRWyb {
+  background-color: transparent;
+  height: 6px;
+  left: 19px;
+  position: absolute;
+  top: 4px;
+  width: 3px;
+}
+.signin .vector-401-xzRWyb {
+  background-color: transparent;
+  height: 6px;
+  left: 16px;
+  position: absolute;
+  top: 4px;
+  width: 3px;
+}
+.signin .vector-9nI8mc {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 38px;
+  position: relative;
+  width: 38px;
+}
+.signin .vlj-lsenord-minst-7-tecken-mQPLvo {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  margin-top: 31px;
+  min-height: 19px;
+  min-width: 228px;
+  position: relative;
+  text-align: left;
+  width: auto;
+}

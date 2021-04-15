@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/productpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/dropdownmeny.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Rubik:400,300,700,500|Rubik+Mono+One:400|Roboto:400,700,500");
+
+      .component-wrapper a,
+      .screen a {
+        text-decoration: none;
+        display: contents;
+      }
+
+      .full-width-a {
+        width: 100%;
+      }
+
+      .full-height-a {
+        height: 100%;
+      }
+
+      .screen textarea:focus,
+      .screen input:focus {
+        outline: none;
+      }
+
+      .screen *,
+      .component-wrapper * {
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .screen div {
+        -webkit-text-size-adjust: none;
+      }
+
+      .container-center-vertical,
+      .container-center-horizontal {
+        pointer-events: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container-center-vertical {
+        align-items: center;
+        height: 100%;
+      }
+
+      .container-center-horizontal {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .container-center-vertical > *,
+      .container-center-horizontal > * {
+        pointer-events: auto;
+        flex-shrink: 0;
+      }
+
+      .component-wrapper,
+      .screen {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+      }
+
+      .auto-animated div {
+        opacity: 0;
+        position: absolute;
+        --z-index: -1;
+      }
+
+      .auto-animated .container-center-vertical,
+      .auto-animated .container-center-horizontal {
+        opacity: 1;
+      }
+
+      .overlay {
+        position: absolute;
+        opacity: 0;
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+
+      .animate-appear {
+        opacity: 0;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 normal forwards;
+      }
+
+      .animate-disappear {
+        opacity: 1;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 reverse forwards;
+      }
+
+      .animate-nodelay {
+        animation-delay: 0s;
+      }
+
+      @keyframes reveal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+      .align-self-flex-center {
+        align-self: center;
+      }
+      .valign-text-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .valign-text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      input:focus {
+        outline: none;
+      }
+      .component-wrapper,
+      .component-wrapper * {
+        pointer-events: none;
+      }
+
+      .component-wrapper a *,
+      .component-wrapper a,
+      .component-wrapper input,
+      .component-wrapper video,
+      .component-wrapper iframe,
+      .listeners-active,
+      .listeners-active * {
+        pointer-events: auto;
+      }
+
+      .hidden,
+      .hidden * {
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .smart-layers-pointers,
+      .smart-layers-pointers * {
+        pointer-events: auto;
+        visibility: visible;
+      }
+
+      .component-wrapper.not-ready,
+      .component-wrapper.not-ready * {
+        visibility: hidden !important;
+      }
+
+      .listeners-active-click,
+      .listeners-active-click * {
+        cursor: pointer;
+      }
+
+      @import url("https://fonts.googleapis.com/css?family=Rubik:400,300,700,500|Rubik+Mono+One:400|Roboto:400,700,500");
+      * {
+        box-sizing: border-box;
+      }
+      .border-0-6px-black {
+        border: 0.6px solid var(--black);
+      }
+      .border-0-8px-black {
+        border: 0.8px solid var(--black);
+      }
+      .border-0-9px-white {
+        border: 0.9px solid var(--white);
+      }
+      .border-1px-black {
+        border: 1px solid var(--black);
+      }
+      .border-1px-fuscous-gray {
+        border: 1px solid var(--fuscous-gray);
+      }
+      .border-1px-white {
+        border: 1px solid var(--white);
+      }
+      .rubik-bold-black-16px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-16px);
+        font-style: normal;
+        font-weight: 700;
+      }
+      .rubik-bold-black-18px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-18px);
+        font-style: normal;
+        font-weight: 700;
+      }
+      .rubik-bold-black-37-9px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-37_9px);
+        font-style: normal;
+        font-weight: 700;
+      }
+      .rubik-medium-black-16px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-16px);
+        font-style: normal;
+        font-weight: 500;
+      }
+      .rubik-medium-chicago-36px {
+        color: rgba(94, 94, 94, 1);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-36px);
+        font-style: normal;
+        font-weight: 500;
+      }
+      .rubik-normal-black-14px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-14px);
+        font-style: normal;
+        font-weight: 400;
+      }
+      .rubik-normal-black-16px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-16px);
+        font-style: normal;
+        font-weight: 400;
+      }
+      .rubik-normal-dove-gray-14px {
+        color: var(--dove-gray);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-14px);
+        font-style: normal;
+        font-weight: 400;
+      }
+      .rubik-normal-fuscous-gray-16px {
+        color: var(--fuscous-gray);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-16px);
+        font-style: normal;
+        font-weight: 400;
+      }
+      .rubik-normal-wild-sand-16px {
+        color: var(--wild-sand);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-16px);
+        font-style: normal;
+        font-weight: 400;
+      }
+      :root {
+        --black: rgba(0, 0, 0, 1);
+        --celeste: rgba(207, 207, 207, 1);
+        --dove-gray: rgba(110, 110, 110, 1);
+        --font-family-rubik: "Rubik", Helvetica;
+        --font-size-14px: 14px;
+        --font-size-16px: 16px;
+        --font-size-18px: 18px;
+        --font-size-36px: 36px;
+        --font-size-37_9px: 37.9px;
+        --fuscous-gray: rgba(84, 84, 84, 1);
+        --hint-of-red: rgba(249, 249, 249, 1);
+        --mercury: rgba(230, 230, 230, 1);
+        --mist-gray: rgba(196, 196, 196, 1);
+        --pink-swan: rgba(183, 183, 183, 1);
+        --white: rgba(255, 255, 255, 1);
+        --wild-sand: rgba(244, 244, 244, 1);
+      }
+    </style>
+    <meta name="author" content="AnimaApp.com - Design to code, Automated." />
+  </head>
+  <body style="margin: 0; background: rgba(244, 244, 244, 1)">
+    <input type="hidden" id="anPageName" name="page" value="productpage" />
+    <div class="container-center-horizontal">
+      <div class="productpage screen">
+        <div class="menubarinloggad-C61RwL">
+          <a href="loggedinlandingpage.html" class="align-self-flex-center">
+            <div class="loggo-bxgaHT">
+              <div class="ookstep-i10667231067196-58J6IH rubik-bold-black-37-9px">ookstep</div>
+              <div class="logo2bookstep-1-58J6IH"></div>
+              <img class="b-logo-3-58J6IH" src="img/b-logo-3@2x.png" /></div
+          ></a>
+          <a href="loggedinlandingpage.html"
+            ><div class="hem-i10667231067180-bxgaHT rubik-normal-black-16px">Hem</div></a
+          >
+          <a href="productpage.html" class="align-self-flex-center"
+            ><div class="bcker-i10667231067179-bxgaHT rubik-normal-black-16px">Böcker</div></a
+          >
+          <div class="om-oss-i10667231067178-bxgaHT rubik-normal-black-16px">Om oss</div>
+          <div class="kontakt-i10667231067177-bxgaHT rubik-normal-black-16px">Kontakt</div>
+          <a href="javascript:ShowOverlay('dropdownmeny', 'animate-appear');">
+            <div class="profil-bxgaHT">
+              <div class="anvndarnamn-i10667231067193-HCfW0l rubik-normal-black-16px">Användarnamn</div>
+              <img class="vector-HCfW0l" src="img/vector-12@2x.svg" />
+              <div class="profile-HCfW0l">
+                <div class="bxbx-user-LV8roB">
+                  <img class="vector-d0PgHK" src="img/vector@2x.png" />
+                  <img class="vector-xoDvf6" src="img/vector-32@2x.svg" />
+                </div>
+              </div></div
+          ></a>
+          <a href="index-landingpage.html">
+            <div class="loggaut-bxgaHT border-1px-fuscous-gray">
+              <div class="logga-ut-i10667231067182-wQXDsF rubik-normal-fuscous-gray-16px">Logga ut</div>
+              <div class="group-wQXDsF">
+                <img class="vector-Tu5MOb" src="img/vector-19@2x.svg" />
+                <img class="vector-5IUgZZ" src="img/vector-10@2x.svg" />
+                <img class="vector-ecSiqR" src="img/vector-11@2x.svg" />
+              </div></div
+          ></a>
+        </div>
+        <div class="flex-row-C61RwL">
+          <div class="flex-col-dXBp89">
+            <div class="kategori-0PZcXW valign-text-middle">Kategori</div>
+            <div class="group-554-0PZcXW">
+              <div class="flex-col-PsfOqH">
+                <div class="flex-row-aM1AkL">
+                  <div class="group-551-xsFe8q">
+                    <div class="rectangle-576-iNn5Rt"></div>
+                    <div class="lorem-ipsum-iNn5Rt">Lorem Ipsum</div>
+                  </div>
+                  <div class="group-552-xsFe8q">
+                    <div class="rectangle-576-0cSzqb"></div>
+                    <div class="lorem-ipsum-0cSzqb">Lorem Ipsum</div>
+                  </div>
+                  <div class="group-530-xsFe8q">
+                    <div class="rectangle-576-xQPb5c"></div>
+                    <div class="lorem-ipsum-xQPb5c">Lorem Ipsum</div>
+                  </div>
+                  <div class="group-531-xsFe8q">
+                    <div class="rectangle-576-wMteOm"></div>
+                    <div class="lorem-ipsum-wMteOm">Lorem Ipsum</div>
+                  </div>
+                  <div class="group-532-xsFe8q">
+                    <div class="rectangle-576-BN4OVN"></div>
+                    <div class="lorem-ipsum-BN4OVN">Lorem Ipsum</div>
+                  </div>
+                </div>
+                <div class="flex-row-tt4fBk">
+                  <div class="group-537-9cffr9">
+                    <div class="rectangle-576-LXQiLG"></div>
+                    <div class="lorem-ipsum-LXQiLG">Lorem Ipsum</div>
+                  </div>
+                  <div class="group-536-9cffr9">
+                    <div class="rectangle-576-QdhhBH"></div>
+                    <div class="lorem-ipsum-QdhhBH">Lorem Ipsum</div>
+                  </div>
+                  <div class="group-535-9cffr9">
+                    <div class="rectangle-576-YuHstt"></div>
+                    <div class="lorem-ipsum-YuHstt">Lorem Ipsum</div>
+                  </div>
+                  <div class="group-533-9cffr9">
+                    <div class="rectangle-576-Mifi7z"></div>
+                    <div class="lorem-ipsum-Mifi7z">Lorem Ipsum</div>
+                  </div>
+                </div>
+                <div class="flex-row-LhRvDx">
+                  <div class="group-538-9rjdgM">
+                    <div class="rectangle-576-ZIwI6q"></div>
+                    <div class="lorem-ipsum-ZIwI6q">Lorem Ipsum</div>
+                  </div>
+                  <div class="group-539-9rjdgM">
+                    <div class="rectangle-576-UAKxuG"></div>
+                    <div class="lorem-ipsum-UAKxuG">Lorem Ipsum</div>
+                  </div>
+                  <div class="group-540-9rjdgM">
+                    <div class="rectangle-576-NKyits"></div>
+                    <div class="lorem-ipsum-NKyits">Lorem Ipsum</div>
+                  </div>
+                  <div class="group-541-9rjdgM">
+                    <div class="rectangle-576-MCshYc"></div>
+                    <div class="lorem-ipsum-MCshYc">Lorem Ipsum</div>
+                  </div>
+                  <div class="group-542-9rjdgM">
+                    <div class="rectangle-576-v7WACc"></div>
+                    <div class="lorem-ipsum-v7WACc">Lorem Ipsum</div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-row-PsfOqH">
+                <div class="group-546-Hscl3y">
+                  <div class="rectangle-576-T2rIG5"></div>
+                  <div class="lorem-ipsum-T2rIG5">Lorem Ipsum</div>
+                </div>
+                <div class="group-544-Hscl3y">
+                  <div class="rectangle-576-QzRog2"></div>
+                  <div class="lorem-ipsum-QzRog2">Lorem Ipsum</div>
+                </div>
+                <div class="group-545-Hscl3y">
+                  <div class="rectangle-576-TJ6k7N"></div>
+                  <div class="lorem-ipsum-TJ6k7N">Lorem Ipsum</div>
+                </div>
+                <div class="group-543-Hscl3y">
+                  <div class="rectangle-576-Abdc59"></div>
+                  <div class="lorem-ipsum-Abdc59">Lorem Ipsum</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="group-584-dXBp89">
+            <div class="rectangle-1297-NY6Ocx"></div>
+          </div>
+        </div>
+        <div class="flex-col-C61RwL">
+          <div class="overlap-group-0xy0vn">
+            <div class="rectangle-374-y1HRxC"></div>
+            <div class="rectangle-453-y1HRxC"></div>
+            <img class="group-487-y1HRxC" src="img/group-487@2x.svg" />
+            <img class="group-488-y1HRxC" src="img/group-488@2x.svg" />
+            <div class="group-489-y1HRxC">
+              <div class="evasearch-fill-nCHwrk"><img class="vector-9B27qD" src="img/vector-209@2x.svg" /></div>
+            </div>
+            <div class="filtrera-y1HRxC">Filtrera</div>
+            <div class="sortera-y1HRxC">Sortera</div>
+            <div class="sk-efter-boktitel-y1HRxC">sök efter boktitel...</div>
+            <div class="romaner-y1HRxC valign-text-middle">Romaner</div>
+            <div class="group-524-y1HRxC">
+              <div class="group-519-fIuDFO">
+                <div class="overlap-group5-NuCsdn">
+                  <a href="specificbookpage.html">
+                    <div class="group-416-OJKYBx">
+                      <div class="rectangle-436-ZtF2BX"></div>
+                      <div class="rectangle-437-ZtF2BX"></div>
+                      <img class="vector-240-ZtF2BX" src="img/vector-240-53@2x.svg" />
+                      <img class="vector-241-ZtF2BX" src="img/vector-241-5@2x.svg" /></div
+                  ></a>
+                  <div class="under-en-brinnande-himmel-OJKYBx rubik-bold-black-16px">Under en brinnande himmel</div>
+                  <div class="rectangle-507-OJKYBx"></div>
+                  <div class="rectangle-508-OJKYBx"></div>
+                  <img class="vector-OJKYBx" src="img/vector-214@2x.svg" />
+                  <div class="group-417-OJKYBx"><img class="vector-242-7bxUSu" src="img/vector-242-30@2x.svg" /></div>
+                  <div class="mark-sullivan-OJKYBx rubik-normal-black-14px">Mark Sullivan</div>
+                  <div class="ls-om-vlj-OJKYBx valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+                </div>
+                <div class="overlap-group6-NuCsdn">
+                  <a href="specificbookpage.html">
+                    <div class="group-441-V9uiK9">
+                      <div class="group-411-lCDMdJ">
+                        <div class="rectangle-436-eDl0LZ"></div>
+                        <div class="rectangle-437-eDl0LZ"></div>
+                        <img class="vector-240-eDl0LZ" src="img/vector-240-53@2x.svg" />
+                        <img class="vector-241-eDl0LZ" src="img/vector-241-5@2x.svg" />
+                      </div></div
+                  ></a>
+                  <div class="rectangle-507-V9uiK9"></div>
+                  <div class="rectangle-508-V9uiK9"></div>
+                  <img class="vector-V9uiK9" src="img/vector-214@2x.svg" />
+                  <div class="under-en-brinnande-himmel-V9uiK9 rubik-bold-black-16px">Under en brinnande himmel</div>
+                  <div class="mark-sullivan-V9uiK9 rubik-normal-black-14px">Mark Sullivan</div>
+                  <div class="ls-om-vlj-V9uiK9 valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+                </div>
+                <div class="overlap-group7-NuCsdn">
+                  <a href="specificbookpage.html">
+                    <div class="group-442-pBqcr7">
+                      <div class="group-411-bRmfWt">
+                        <div class="rectangle-436-sgHdoS"></div>
+                        <div class="rectangle-437-sgHdoS"></div>
+                        <img class="vector-240-sgHdoS" src="img/vector-240-53@2x.svg" />
+                        <img class="vector-241-sgHdoS" src="img/vector-241-5@2x.svg" />
+                      </div></div
+                  ></a>
+                  <div class="rectangle-507-pBqcr7"></div>
+                  <div class="rectangle-508-pBqcr7"></div>
+                  <img class="vector-pBqcr7" src="img/vector-214@2x.svg" />
+                  <div class="under-en-brinnande-himmel-pBqcr7 rubik-bold-black-16px">Under en brinnande himmel</div>
+                  <div class="mark-sullivan-pBqcr7 rubik-normal-black-14px">Mark Sullivan</div>
+                  <div class="ls-om-vlj-pBqcr7 valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+                </div>
+                <div class="overlap-group8-NuCsdn">
+                  <a href="specificbookpage.html">
+                    <div class="group-443-YkxMbv">
+                      <div class="group-411-5xg6ny">
+                        <div class="rectangle-436-YMG3TS"></div>
+                        <div class="rectangle-437-YMG3TS"></div>
+                        <img class="vector-240-YMG3TS" src="img/vector-240-53@2x.svg" />
+                        <img class="vector-241-YMG3TS" src="img/vector-241-5@2x.svg" />
+                      </div></div
+                  ></a>
+                  <div class="group-418-YkxMbv">
+                    <img class="ellipse-306-dpIj9W" src="img/ellipse-306-1@2x.svg" />
+                    <img class="vector-242-dpIj9W" src="img/vector-242-43@2x.svg" />
+                  </div>
+                  <div class="under-en-brinnande-himmel-YkxMbv rubik-bold-black-16px">Under en brinnande himmel</div>
+                  <div class="mark-sullivan-YkxMbv rubik-normal-black-14px">Mark Sullivan</div>
+                  <div class="ls-om-vlj-YkxMbv valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+                  <div class="rectangle-507-YkxMbv"></div>
+                  <div class="rectangle-508-YkxMbv"></div>
+                  <img class="vector-YkxMbv" src="img/vector-214@2x.svg" />
+                </div>
+              </div>
+              <img class="polygon-3-fIuDFO" src="img/polygon-5-1@2x.svg" />
+              <img class="polygon-1-fIuDFO" src="img/polygon-5-1@2x.svg" />
+              <img class="polygon-2-fIuDFO" src="img/polygon-5-1@2x.svg" />
+              <img class="polygon-4-fIuDFO" src="img/polygon-5-1@2x.svg" />
+            </div>
+          </div>
+          <div class="overlap-group4-0xy0vn">
+            <div class="rectangle-375-rf3da9"></div>
+            <div class="group-586-rf3da9">
+              <img class="group-491-MHh6nE" src="img/group-491-2@2x.svg" />
+              <img class="group-490-MHh6nE" src="img/group-490-2@2x.svg" />
+              <img class="group-492-MHh6nE" src="img/group-492-3@2x.svg" />
+            </div>
+            <div class="rectangle-460-rf3da9"></div>
+            <div class="bcker-som-fr-di-g-lite-fortare-rf3da9 valign-text-middle">
+              Böcker som får dig att gå lite fortare
+            </div>
+            <div class="kittlande-knsla-hannibal-lecter-rf3da9 valign-text-middle">
+              “Kittlande känslan av att lyssna på thrillers som får dig att skynda lite extra,<br />
+              leveras i dessa böcker om berättelsen om Hannibal Lecter.”
+            </div>
+            <div class="preferenser-rf3da9 valign-text-middle rubik-normal-black-14px">Preferenser:</div>
+            <div class="x-eira-rf3da9 valign-text-middle">
+              <span><span class="span0-Dd2nB8">-&nbsp;&nbsp;</span><span class="span1-Dd2nB8">Eira </span> </span>
+            </div>
+            <div class="x10000-steg-rf3da9 valign-text-middle rubik-normal-black-14px">10.000 steg</div>
+            <div class="ca-60-min-rf3da9 valign-text-middle rubik-normal-black-14px">ca. 60 min</div>
+            <img class="vector-rf3da9" src="img/vector-208@2x.svg" />
+            <div class="biclock-rf3da9">
+              <div class="group-nS8ixs">
+                <img class="vector-Oyt3L3" src="img/vector-210@2x.svg" />
+                <img class="vector-ToSyVA" src="img/vector-211@2x.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="group-550-0xy0vn">
+            <div class="rectangle-454-SRg6EN"></div>
+            <div class="personlig-utveckling-SRg6EN valign-text-middle">Personlig utveckling</div>
+          </div>
+          <div class="group-525-0xy0vn">
+            <div class="group-519-uhAlNH">
+              <div class="overlap-group5-rU7k26">
+                <a href="specificbookpage.html">
+                  <div class="group-416-popJNh">
+                    <div class="rectangle-436-ej7Zeh"></div>
+                    <div class="rectangle-437-ej7Zeh"></div>
+                    <img class="vector-240-ej7Zeh" src="img/vector-240-61@2x.svg" />
+                    <img class="vector-241-ej7Zeh" src="img/vector-241-14@2x.svg" /></div
+                ></a>
+                <div class="under-en-brinnande-himmel-popJNh rubik-bold-black-16px">Under en brinnande himmel</div>
+                <div class="rectangle-507-popJNh"></div>
+                <div class="rectangle-508-popJNh"></div>
+                <img class="vector-popJNh" src="img/vector-214@2x.svg" />
+                <div class="group-417-popJNh"><img class="vector-242-sYH1Qr" src="img/vector-242-30@2x.svg" /></div>
+                <div class="mark-sullivan-popJNh rubik-normal-black-14px">Mark Sullivan</div>
+                <div class="ls-om-vlj-popJNh valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+              </div>
+              <div class="overlap-group6-rU7k26">
+                <a href="specificbookpage.html">
+                  <div class="group-441-xcxCna">
+                    <div class="group-411-gAbYp5">
+                      <div class="rectangle-436-kjBUST"></div>
+                      <div class="rectangle-437-kjBUST"></div>
+                      <img class="vector-240-kjBUST" src="img/vector-240-61@2x.svg" />
+                      <img class="vector-241-kjBUST" src="img/vector-241-14@2x.svg" />
+                    </div></div
+                ></a>
+                <div class="rectangle-507-xcxCna"></div>
+                <div class="rectangle-508-xcxCna"></div>
+                <img class="vector-xcxCna" src="img/vector-214@2x.svg" />
+                <div class="under-en-brinnande-himmel-xcxCna rubik-bold-black-16px">Under en brinnande himmel</div>
+                <div class="mark-sullivan-xcxCna rubik-normal-black-14px">Mark Sullivan</div>
+                <div class="ls-om-vlj-xcxCna valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+              </div>
+              <div class="overlap-group7-rU7k26">
+                <a href="specificbookpage.html">
+                  <div class="group-442-SF7tTh">
+                    <div class="group-411-IPHRRv">
+                      <div class="rectangle-436-gheGp4"></div>
+                      <div class="rectangle-437-gheGp4"></div>
+                      <img class="vector-240-gheGp4" src="img/vector-240-61@2x.svg" />
+                      <img class="vector-241-gheGp4" src="img/vector-241-14@2x.svg" />
+                    </div></div
+                ></a>
+                <div class="rectangle-507-SF7tTh"></div>
+                <div class="rectangle-508-SF7tTh"></div>
+                <img class="vector-SF7tTh" src="img/vector-214@2x.svg" />
+                <div class="under-en-brinnande-himmel-SF7tTh rubik-bold-black-16px">Under en brinnande himmel</div>
+                <div class="mark-sullivan-SF7tTh rubik-normal-black-14px">Mark Sullivan</div>
+                <div class="ls-om-vlj-SF7tTh valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+              </div>
+              <div class="overlap-group8-rU7k26">
+                <a href="specificbookpage.html">
+                  <div class="group-443-3xF9JL">
+                    <div class="group-411-lqSB3o">
+                      <div class="rectangle-436-vffJEl"></div>
+                      <div class="rectangle-437-vffJEl"></div>
+                      <img class="vector-240-vffJEl" src="img/vector-240-61@2x.svg" />
+                      <img class="vector-241-vffJEl" src="img/vector-241-14@2x.svg" />
+                    </div></div
+                ></a>
+                <div class="group-418-3xF9JL">
+                  <img class="ellipse-306-60FU4V" src="img/ellipse-306-1@2x.svg" />
+                  <img class="vector-242-60FU4V" src="img/vector-242-43@2x.svg" />
+                </div>
+                <div class="under-en-brinnande-himmel-3xF9JL rubik-bold-black-16px">Under en brinnande himmel</div>
+                <div class="mark-sullivan-3xF9JL rubik-normal-black-14px">Mark Sullivan</div>
+                <div class="ls-om-vlj-3xF9JL valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+                <div class="rectangle-507-3xF9JL"></div>
+                <div class="rectangle-508-3xF9JL"></div>
+                <img class="vector-3xF9JL" src="img/vector-214@2x.svg" />
+              </div>
+            </div>
+            <img class="polygon-3-uhAlNH" src="img/polygon-5-1@2x.svg" />
+            <img class="polygon-1-uhAlNH" src="img/polygon-5-1@2x.svg" />
+            <img class="polygon-2-uhAlNH" src="img/polygon-5-1@2x.svg" />
+            <img class="polygon-4-uhAlNH" src="img/polygon-5-1@2x.svg" />
+          </div>
+          <div class="overlap-group1-0xy0vn">
+            <div class="rectangle-435-NG5cxJ"></div>
+            <div class="group-549-NG5cxJ">
+              <div class="rectangle-459-zGlxNq"></div>
+              <div class="science-fiction-zGlxNq valign-text-middle">Science fiction</div>
+            </div>
+            <div class="group-526-NG5cxJ">
+              <div class="group-519-lYIxZV">
+                <div class="overlap-group5-RwiXZv">
+                  <a href="specificbookpage.html">
+                    <div class="group-416-k5eOBZ">
+                      <div class="rectangle-436-qqRlxL"></div>
+                      <div class="rectangle-437-qqRlxL"></div>
+                      <img class="vector-240-qqRlxL" src="img/vector-240-57@2x.svg" />
+                      <img class="vector-241-qqRlxL" src="img/vector-241-57@2x.svg" /></div
+                  ></a>
+                  <div class="under-en-brinnande-himmel-k5eOBZ rubik-bold-black-16px">Under en brinnande himmel</div>
+                  <div class="rectangle-507-k5eOBZ"></div>
+                  <div class="rectangle-508-k5eOBZ"></div>
+                  <img class="vector-k5eOBZ" src="img/vector-214@2x.svg" />
+                  <div class="group-417-k5eOBZ"><img class="vector-242-tFtNLp" src="img/vector-242-30@2x.svg" /></div>
+                  <div class="mark-sullivan-k5eOBZ rubik-normal-black-14px">Mark Sullivan</div>
+                  <div class="ls-om-vlj-k5eOBZ valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+                </div>
+                <div class="overlap-group6-RwiXZv">
+                  <a href="specificbookpage.html">
+                    <div class="group-441-0fxp3i">
+                      <div class="group-411-LsHRZA">
+                        <div class="rectangle-436-N1Z56h"></div>
+                        <div class="rectangle-437-N1Z56h"></div>
+                        <img class="vector-240-N1Z56h" src="img/vector-240-58@2x.svg" />
+                        <img class="vector-241-N1Z56h" src="img/vector-241-1@2x.svg" />
+                      </div></div
+                  ></a>
+                  <div class="rectangle-507-0fxp3i"></div>
+                  <div class="rectangle-508-0fxp3i"></div>
+                  <img class="vector-0fxp3i" src="img/vector-214@2x.svg" />
+                  <div class="under-en-brinnande-himmel-0fxp3i rubik-bold-black-16px">Under en brinnande himmel</div>
+                  <div class="mark-sullivan-0fxp3i rubik-normal-black-14px">Mark Sullivan</div>
+                  <div class="ls-om-vlj-0fxp3i valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+                </div>
+                <div class="overlap-group7-RwiXZv">
+                  <a href="specificbookpage.html">
+                    <div class="group-442-MxDS8x">
+                      <div class="group-411-exuQHU">
+                        <div class="rectangle-436-1N3Pex"></div>
+                        <div class="rectangle-437-1N3Pex"></div>
+                        <img class="vector-240-1N3Pex" src="img/vector-240-57@2x.svg" />
+                        <img class="vector-241-1N3Pex" src="img/vector-241-57@2x.svg" />
+                      </div></div
+                  ></a>
+                  <div class="rectangle-507-MxDS8x"></div>
+                  <div class="rectangle-508-MxDS8x"></div>
+                  <img class="vector-MxDS8x" src="img/vector-214@2x.svg" />
+                  <div class="under-en-brinnande-himmel-MxDS8x rubik-bold-black-16px">Under en brinnande himmel</div>
+                  <div class="mark-sullivan-MxDS8x rubik-normal-black-14px">Mark Sullivan</div>
+                  <div class="ls-om-vlj-MxDS8x valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+                </div>
+                <div class="overlap-group8-RwiXZv">
+                  <a href="specificbookpage.html">
+                    <div class="group-443-Y8PTnE">
+                      <div class="group-411-Ygmtju">
+                        <div class="rectangle-436-yXXASa"></div>
+                        <div class="rectangle-437-yXXASa"></div>
+                        <img class="vector-240-yXXASa" src="img/vector-240-57@2x.svg" />
+                        <img class="vector-241-yXXASa" src="img/vector-241-57@2x.svg" />
+                      </div></div
+                  ></a>
+                  <div class="group-418-Y8PTnE">
+                    <img class="ellipse-306-mEkUet" src="img/ellipse-306-1@2x.svg" />
+                    <img class="vector-242-mEkUet" src="img/vector-242-45@2x.svg" />
+                  </div>
+                  <div class="under-en-brinnande-himmel-Y8PTnE rubik-bold-black-16px">Under en brinnande himmel</div>
+                  <div class="mark-sullivan-Y8PTnE rubik-normal-black-14px">Mark Sullivan</div>
+                  <div class="ls-om-vlj-Y8PTnE valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+                  <div class="rectangle-507-Y8PTnE"></div>
+                  <div class="rectangle-508-Y8PTnE"></div>
+                  <img class="vector-Y8PTnE" src="img/vector-214@2x.svg" />
+                </div>
+              </div>
+              <img class="polygon-3-lYIxZV" src="img/polygon-5-1@2x.svg" />
+              <img class="polygon-1-lYIxZV" src="img/polygon-5-1@2x.svg" />
+              <img class="polygon-2-lYIxZV" src="img/polygon-5-1@2x.svg" />
+              <img class="polygon-4-lYIxZV" src="img/polygon-5-1@2x.svg" />
+            </div>
+          </div>
+          <div class="overlap-group2-0xy0vn">
+            <div class="rectangle-461-52Wjwg"></div>
+            <div class="rectangle-463-52Wjwg"></div>
+            <div class="group-556-52Wjwg">
+              <div class="rectangle-459-1mmscj"></div>
+              <div class="biografier-1mmscj valign-text-middle">Biografier</div>
+            </div>
+            <div class="group-527-52Wjwg">
+              <div class="group-519-xTXgzr">
+                <div class="overlap-group5-eerwqq">
+                  <a href="specificbookpage.html">
+                    <div class="group-416-C7XZtk">
+                      <div class="rectangle-436-xSxMXO"></div>
+                      <div class="rectangle-437-xSxMXO"></div>
+                      <img class="vector-240-xSxMXO" src="img/vector-240-61@2x.svg" />
+                      <img class="vector-241-xSxMXO" src="img/vector-241-14@2x.svg" /></div
+                  ></a>
+                  <div class="under-en-brinnande-himmel-C7XZtk rubik-bold-black-16px">Under en brinnande himmel</div>
+                  <div class="rectangle-507-C7XZtk"></div>
+                  <div class="rectangle-508-C7XZtk"></div>
+                  <img class="vector-C7XZtk" src="img/vector-214@2x.svg" />
+                  <div class="group-417-C7XZtk"><img class="vector-242-oZ9C6Z" src="img/vector-242-30@2x.svg" /></div>
+                  <div class="mark-sullivan-C7XZtk rubik-normal-black-14px">Mark Sullivan</div>
+                  <div class="ls-om-vlj-C7XZtk valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+                </div>
+                <div class="overlap-group6-eerwqq">
+                  <a href="specificbookpage.html">
+                    <div class="group-441-JOS2oN">
+                      <div class="group-411-G7k9jx">
+                        <div class="rectangle-436-Qxsr2W"></div>
+                        <div class="rectangle-437-Qxsr2W"></div>
+                        <img class="vector-240-Qxsr2W" src="img/vector-240-61@2x.svg" />
+                        <img class="vector-241-Qxsr2W" src="img/vector-241-14@2x.svg" />
+                      </div></div
+                  ></a>
+                  <div class="rectangle-507-JOS2oN"></div>
+                  <div class="rectangle-508-JOS2oN"></div>
+                  <img class="vector-JOS2oN" src="img/vector-214@2x.svg" />
+                  <div class="under-en-brinnande-himmel-JOS2oN rubik-bold-black-16px">Under en brinnande himmel</div>
+                  <div class="mark-sullivan-JOS2oN rubik-normal-black-14px">Mark Sullivan</div>
+                  <div class="ls-om-vlj-JOS2oN valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+                </div>
+                <div class="overlap-group7-eerwqq">
+                  <a href="specificbookpage.html">
+                    <div class="group-442-vKphAz">
+                      <div class="group-411-9vIlxU">
+                        <div class="rectangle-436-hNZkaC"></div>
+                        <div class="rectangle-437-hNZkaC"></div>
+                        <img class="vector-240-hNZkaC" src="img/vector-240-61@2x.svg" />
+                        <img class="vector-241-hNZkaC" src="img/vector-241-14@2x.svg" />
+                      </div></div
+                  ></a>
+                  <div class="rectangle-507-vKphAz"></div>
+                  <div class="rectangle-508-vKphAz"></div>
+                  <img class="vector-vKphAz" src="img/vector-214@2x.svg" />
+                  <div class="under-en-brinnande-himmel-vKphAz rubik-bold-black-16px">Under en brinnande himmel</div>
+                  <div class="mark-sullivan-vKphAz rubik-normal-black-14px">Mark Sullivan</div>
+                  <div class="ls-om-vlj-vKphAz valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+                </div>
+                <div class="overlap-group8-eerwqq">
+                  <a href="specificbookpage.html">
+                    <div class="group-443-qwqb8a">
+                      <div class="group-411-7e9MRN">
+                        <div class="rectangle-436-IqXbkH"></div>
+                        <div class="rectangle-437-IqXbkH"></div>
+                        <img class="vector-240-IqXbkH" src="img/vector-240-61@2x.svg" />
+                        <img class="vector-241-IqXbkH" src="img/vector-241-14@2x.svg" />
+                      </div></div
+                  ></a>
+                  <div class="group-418-qwqb8a">
+                    <img class="ellipse-306-p2RWxD" src="img/ellipse-306-1@2x.svg" />
+                    <img class="vector-242-p2RWxD" src="img/vector-242-43@2x.svg" />
+                  </div>
+                  <div class="under-en-brinnande-himmel-qwqb8a rubik-bold-black-16px">Under en brinnande himmel</div>
+                  <div class="mark-sullivan-qwqb8a rubik-normal-black-14px">Mark Sullivan</div>
+                  <div class="ls-om-vlj-qwqb8a valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+                  <div class="rectangle-507-qwqb8a"></div>
+                  <div class="rectangle-508-qwqb8a"></div>
+                  <img class="vector-qwqb8a" src="img/vector-214@2x.svg" />
+                </div>
+              </div>
+              <img class="polygon-3-xTXgzr" src="img/polygon-5-1@2x.svg" />
+              <img class="polygon-1-xTXgzr" src="img/polygon-5-1@2x.svg" />
+              <img class="polygon-2-xTXgzr" src="img/polygon-5-1@2x.svg" />
+              <img class="polygon-4-xTXgzr" src="img/polygon-5-1@2x.svg" />
+            </div>
+            <div class="group-528-52Wjwg">
+              <div class="group-519-SZfTyQ">
+                <div class="overlap-group5-od0qyi">
+                  <a href="specificbookpage.html">
+                    <div class="group-416-xuSySN">
+                      <div class="rectangle-436-0iofJC"></div>
+                      <div class="rectangle-437-0iofJC"></div>
+                      <img class="vector-240-0iofJC" src="img/vector-240-61@2x.svg" />
+                      <img class="vector-241-0iofJC" src="img/vector-241-14@2x.svg" /></div
+                  ></a>
+                  <div class="under-en-brinnande-himmel-xuSySN rubik-bold-black-16px">Under en brinnande himmel</div>
+                  <div class="rectangle-507-xuSySN"></div>
+                  <div class="rectangle-508-xuSySN"></div>
+                  <img class="vector-xuSySN" src="img/vector-214@2x.svg" />
+                  <div class="group-417-xuSySN"><img class="vector-242-e241OH" src="img/vector-242-30@2x.svg" /></div>
+                  <div class="mark-sullivan-xuSySN rubik-normal-black-14px">Mark Sullivan</div>
+                  <div class="ls-om-vlj-xuSySN valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+                </div>
+                <div class="overlap-group6-od0qyi">
+                  <a href="specificbookpage.html">
+                    <div class="group-441-xzbBaH">
+                      <div class="group-411-eOHRIh">
+                        <div class="rectangle-436-kcZ88g"></div>
+                        <div class="rectangle-437-kcZ88g"></div>
+                        <img class="vector-240-kcZ88g" src="img/vector-240-61@2x.svg" />
+                        <img class="vector-241-kcZ88g" src="img/vector-241-14@2x.svg" />
+                      </div></div
+                  ></a>
+                  <div class="rectangle-507-xzbBaH"></div>
+                  <div class="rectangle-508-xzbBaH"></div>
+                  <img class="vector-xzbBaH" src="img/vector-214@2x.svg" />
+                  <div class="under-en-brinnande-himmel-xzbBaH rubik-bold-black-16px">Under en brinnande himmel</div>
+                  <div class="mark-sullivan-xzbBaH rubik-normal-black-14px">Mark Sullivan</div>
+                  <div class="ls-om-vlj-xzbBaH valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+                </div>
+                <div class="overlap-group7-od0qyi">
+                  <a href="specificbookpage.html">
+                    <div class="group-442-3kUS6u">
+                      <div class="group-411-Yt4wQM">
+                        <div class="rectangle-436-BZ1kao"></div>
+                        <div class="rectangle-437-BZ1kao"></div>
+                        <img class="vector-240-BZ1kao" src="img/vector-240-61@2x.svg" />
+                        <img class="vector-241-BZ1kao" src="img/vector-241-14@2x.svg" />
+                      </div></div
+                  ></a>
+                  <div class="rectangle-507-3kUS6u"></div>
+                  <div class="rectangle-508-3kUS6u"></div>
+                  <img class="vector-3kUS6u" src="img/vector-214@2x.svg" />
+                  <div class="under-en-brinnande-himmel-3kUS6u rubik-bold-black-16px">Under en brinnande himmel</div>
+                  <div class="mark-sullivan-3kUS6u rubik-normal-black-14px">Mark Sullivan</div>
+                  <div class="ls-om-vlj-3kUS6u valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+                </div>
+                <div class="overlap-group8-od0qyi">
+                  <a href="specificbookpage.html">
+                    <div class="group-443-MJPgMv">
+                      <div class="group-411-T038Xv">
+                        <div class="rectangle-436-Fo4eKs"></div>
+                        <div class="rectangle-437-Fo4eKs"></div>
+                        <img class="vector-240-Fo4eKs" src="img/vector-240-61@2x.svg" />
+                        <img class="vector-241-Fo4eKs" src="img/vector-241-14@2x.svg" />
+                      </div></div
+                  ></a>
+                  <div class="group-418-MJPgMv">
+                    <img class="ellipse-306-ktGBYT" src="img/ellipse-306-1@2x.svg" />
+                    <img class="vector-242-ktGBYT" src="img/vector-242-43@2x.svg" />
+                  </div>
+                  <div class="under-en-brinnande-himmel-MJPgMv rubik-bold-black-16px">Under en brinnande himmel</div>
+                  <div class="mark-sullivan-MJPgMv rubik-normal-black-14px">Mark Sullivan</div>
+                  <div class="ls-om-vlj-MJPgMv valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+                  <div class="rectangle-507-MJPgMv"></div>
+                  <div class="rectangle-508-MJPgMv"></div>
+                  <img class="vector-MJPgMv" src="img/vector-214@2x.svg" />
+                </div>
+              </div>
+              <img class="polygon-3-SZfTyQ" src="img/polygon-5-1@2x.svg" />
+              <img class="polygon-1-SZfTyQ" src="img/polygon-5-1@2x.svg" />
+              <img class="polygon-2-SZfTyQ" src="img/polygon-5-1@2x.svg" />
+              <img class="polygon-4-SZfTyQ" src="img/polygon-5-1@2x.svg" />
+            </div>
+            <div class="group-548-52Wjwg">
+              <div class="rectangle-464-PxoWZB"></div>
+              <div class="unga-vuxna-PxoWZB valign-text-middle">Unga vuxna</div>
+            </div>
+          </div>
+          <div class="overlap-group3-0xy0vn">
+            <div class="rectangle-465-GW1jy1"></div>
+            <div class="rectangle-466-GW1jy1"></div>
+            <div class="spnningsromaner-GW1jy1 valign-text-middle">Spänningsromaner</div>
+            <div class="group-529-GW1jy1">
+              <div class="group-519-Ni9ekY">
+                <div class="overlap-group5-FLqTQZ">
+                  <a href="specificbookpage.html">
+                    <div class="group-416-OapxCJ">
+                      <div class="rectangle-436-6tvyda"></div>
+                      <div class="rectangle-437-6tvyda"></div>
+                      <img class="vector-240-6tvyda" src="img/vector-240-53@2x.svg" />
+                      <img class="vector-241-6tvyda" src="img/vector-241-5@2x.svg" /></div
+                  ></a>
+                  <div class="under-en-brinnande-himmel-OapxCJ rubik-bold-black-16px">Under en brinnande himmel</div>
+                  <div class="rectangle-507-OapxCJ"></div>
+                  <div class="rectangle-508-OapxCJ"></div>
+                  <img class="vector-OapxCJ" src="img/vector-214@2x.svg" />
+                  <div class="group-417-OapxCJ"><img class="vector-242-qOJsA4" src="img/vector-242-30@2x.svg" /></div>
+                  <div class="mark-sullivan-OapxCJ rubik-normal-black-14px">Mark Sullivan</div>
+                  <div class="ls-om-vlj-OapxCJ valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+                </div>
+                <div class="overlap-group6-FLqTQZ">
+                  <a href="specificbookpage.html">
+                    <div class="group-441-8LLEBC">
+                      <div class="group-411-XEqhMt">
+                        <div class="rectangle-436-bfsSxb"></div>
+                        <div class="rectangle-437-bfsSxb"></div>
+                        <img class="vector-240-bfsSxb" src="img/vector-240-53@2x.svg" />
+                        <img class="vector-241-bfsSxb" src="img/vector-241-5@2x.svg" />
+                      </div></div
+                  ></a>
+                  <div class="rectangle-507-8LLEBC"></div>
+                  <div class="rectangle-508-8LLEBC"></div>
+                  <img class="vector-8LLEBC" src="img/vector-214@2x.svg" />
+                  <div class="under-en-brinnande-himmel-8LLEBC rubik-bold-black-16px">Under en brinnande himmel</div>
+                  <div class="mark-sullivan-8LLEBC rubik-normal-black-14px">Mark Sullivan</div>
+                  <div class="ls-om-vlj-8LLEBC valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+                </div>
+                <div class="overlap-group7-FLqTQZ">
+                  <a href="specificbookpage.html">
+                    <div class="group-442-szW1YQ">
+                      <div class="group-411-uHdG6G">
+                        <div class="rectangle-436-xOvkIg"></div>
+                        <div class="rectangle-437-xOvkIg"></div>
+                        <img class="vector-240-xOvkIg" src="img/vector-240-53@2x.svg" />
+                        <img class="vector-241-xOvkIg" src="img/vector-241-5@2x.svg" />
+                      </div></div
+                  ></a>
+                  <div class="rectangle-507-szW1YQ"></div>
+                  <div class="rectangle-508-szW1YQ"></div>
+                  <img class="vector-szW1YQ" src="img/vector-214@2x.svg" />
+                  <div class="under-en-brinnande-himmel-szW1YQ rubik-bold-black-16px">Under en brinnande himmel</div>
+                  <div class="mark-sullivan-szW1YQ rubik-normal-black-14px">Mark Sullivan</div>
+                  <div class="ls-om-vlj-szW1YQ valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+                </div>
+                <div class="overlap-group8-FLqTQZ">
+                  <a href="specificbookpage.html">
+                    <div class="group-443-4e1tvz">
+                      <div class="group-411-I6qoLH">
+                        <div class="rectangle-436-WOhyB0"></div>
+                        <div class="rectangle-437-WOhyB0"></div>
+                        <img class="vector-240-WOhyB0" src="img/vector-240-53@2x.svg" />
+                        <img class="vector-241-WOhyB0" src="img/vector-241-5@2x.svg" />
+                      </div></div
+                  ></a>
+                  <div class="group-418-4e1tvz">
+                    <img class="ellipse-306-TgXBz5" src="img/ellipse-306-1@2x.svg" />
+                    <img class="vector-242-TgXBz5" src="img/vector-242-43@2x.svg" />
+                  </div>
+                  <div class="under-en-brinnande-himmel-4e1tvz rubik-bold-black-16px">Under en brinnande himmel</div>
+                  <div class="mark-sullivan-4e1tvz rubik-normal-black-14px">Mark Sullivan</div>
+                  <div class="ls-om-vlj-4e1tvz valign-text-middle rubik-normal-dove-gray-14px">Läs om/Välj</div>
+                  <div class="rectangle-507-4e1tvz"></div>
+                  <div class="rectangle-508-4e1tvz"></div>
+                  <img class="vector-4e1tvz" src="img/vector-214@2x.svg" />
+                </div>
+              </div>
+              <img class="polygon-3-Ni9ekY" src="img/polygon-5-1@2x.svg" />
+              <img class="polygon-1-Ni9ekY" src="img/polygon-5-1@2x.svg" />
+              <img class="polygon-2-Ni9ekY" src="img/polygon-5-1@2x.svg" />
+              <img class="polygon-4-Ni9ekY" src="img/polygon-5-1@2x.svg" />
+            </div>
+            <div class="rectangle-384-GW1jy1"></div>
+            <div class="group-521-GW1jy1">
+              <div class="group-330-OGdLPf">
+                <div class="hem-VRwhrb rubik-normal-wild-sand-16px">Hem</div>
+                <div class="bcker-VRwhrb rubik-normal-wild-sand-16px">Böcker</div>
+                <div class="om-oss-VRwhrb rubik-normal-wild-sand-16px">Om oss</div>
+                <div class="logga-in-VRwhrb rubik-normal-wild-sand-16px">Logga in</div>
+                <div class="skapa-konto-gratis-VRwhrb rubik-normal-wild-sand-16px">Skapa konto gratis</div>
+              </div>
+            </div>
+            <div class="group-522-GW1jy1">
+              <img class="vector-Nvh3o3" src="img/vector-1@2x.svg" />
+              <div class="group-Nvh3o3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay-dropdownmeny" class="overlay" style="min-height: 6493px">
+      <div class="container-center-horizontal">
+        <div class="dropdownmeny screen">
+          <img class="vector-C61RwL" src="img/vector@2x.svg" />
+          <div class="frame-26-C61RwL">
+            <a href="macbook-pro-78.html"><div class="pgende-bok-yS5w2I">Pågående bok</div></a>
+            <a href="frame-18.html"><div class="profil-yS5w2I">Profil</div></a>
+            <div class="bokteam-yS5w2I">Bokteam</div>
+            <div class="statistik-yS5w2I">Statistik</div>
+            <a href="macbook-pro-79.html"><div class="instllningar-yS5w2I">Inställningar</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var overlay_id = "overlay-dropdownmeny";
+      document.getElementById(overlay_id).addEventListener(
+        "click",
+        function (event) {
+          var e = event || window.event;
+          var clickedDiv = e.toElement || e.target;
+          if (clickedDiv.parentElement.id == overlay_id) {
+            HideOverlay("dropdownmeny", "animate-disappear");
+          }
+        },
+        false
+      );
+    </script>
+    <script>
+      ShowOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
+        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var last = cssClasses.slice(-1)[0];
+        if (last.lastIndexOf("animate") == -1) {
+          document.getElementById(overlayName).className =
+            document.getElementById(overlayName).className + " " + animationName;
+        }
+        if (window.loadAsyncSrc != undefined) {
+          loadAsyncSrc();
+        }
+      };
+      HideOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
+        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var last = cssClasses.slice(-1)[0];
+        if (last.lastIndexOf("animate") != -1) {
+          cssClasses.splice(-1);
+          cssClasses.push(animationName);
+          document.getElementById(overlayName).className = cssClasses.join(" ");
+
+          cssClasses.splice(-1);
+          setTimeout(function () {
+            document.getElementById(overlayName).className = cssClasses.join(" ");
+          }, 1100);
+        }
+        var vids = document.getElementsByTagName("video");
+        if (vids) {
+          for (var i = 0; i < vids.length; i++) {
+            var video = vids.item(i);
+            video.pause();
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

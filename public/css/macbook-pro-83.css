@@ -1,0 +1,2136 @@
+/* screen - macbook-pro-83 */
+
+.macbook-pro-83 {
+  align-items: flex-end;
+  background-color: var(--wild-sand);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 2752px;
+  justify-content: flex-start;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1440px;
+}
+.macbook-pro-83 .anvndare-kan-nu-och-google-play-4eduM0 {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  height: auto;
+  left: 313px;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  position: absolute;
+  text-align: left;
+  top: 1110px;
+  width: 423px;
+}
+.macbook-pro-83 .anvndarnamn-i10642981067193-HCfW0l {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-top: 1.42px;
+  min-height: 24px;
+  min-width: 118px;
+  opacity: 0.8;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.macbook-pro-83 .b-logo-3-58J6IH {
+  background-color: transparent;
+  height: 34px;
+  left: -0px;
+  object-fit: cover;
+  position: absolute;
+  top: 5px;
+  width: 39px;
+}
+.macbook-pro-83 .bcker-RN0raT {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-left: 34px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 71px;
+}
+.macbook-pro-83 .bcker-i10642981067179-bxgaHT {
+  align-self: center;
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-left: 80px;
+  margin-top: 11.0px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 70px;
+}
+.macbook-pro-83 .bok-VGG1xO {
+  align-self: center;
+  background-color: transparent;
+  color: var(--black);
+  flex-shrink: 1;
+  font-family: 'Rubik', Helvetica;
+  font-size: 28.1px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  letter-spacing: 0.14px;
+  line-height: normal;
+  margin-left: 2.55px;
+  min-height: 33px;
+  position: relative;
+  text-align: left;
+  width: 65px;
+}
+.macbook-pro-83 .boktitel-aYvbkH {
+  background-color: transparent;
+  height: auto;
+  left: 20px;
+  letter-spacing: 0.03px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 207px;
+  width: 147px;
+}
+.macbook-pro-83 .boktitel-bNhJuM {
+  background-color: transparent;
+  height: auto;
+  left: 20px;
+  letter-spacing: 0.03px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 207px;
+  width: 147px;
+}
+.macbook-pro-83 .boktitel-hLI0Ul {
+  background-color: transparent;
+  height: auto;
+  left: 20px;
+  letter-spacing: 0.03px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 207px;
+  width: 147px;
+}
+.macbook-pro-83 .boktitel-iI3U4E {
+  background-color: transparent;
+  height: auto;
+  left: 20px;
+  letter-spacing: 0.03px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 207px;
+  width: 147px;
+}
+.macbook-pro-83 .bsta-bckerna-at-tivationen-igng-4eduM0 {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  height: auto;
+  left: 337px;
+  letter-spacing: 0.09px;
+  line-height: 52.2px;
+  position: absolute;
+  text-align: left;
+  top: 55px;
+  white-space: nowrap;
+  width: auto;
+}
+.macbook-pro-83 .bxbx-user-LV8roB {
+  background-color: transparent;
+  border-radius: 50px;
+  flex-shrink: 1;
+  height: 23px;
+  overflow: hidden;
+  position: relative;
+  width: 23px;
+}
+.macbook-pro-83 .download-from-app-store-sOcflr {
+  background-color: transparent;
+  color: var(--white);
+  font-family: 'Rubik', Helvetica;
+  font-size: 8.3px;
+  font-style: normal;
+  font-weight: 300;
+  height: auto;
+  left: 63px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 12px;
+  width: 78px;
+}
+.macbook-pro-83 .download-from-google-play-Q7CNTK {
+  background-color: transparent;
+  color: var(--white);
+  font-family: 'Rubik', Helvetica;
+  font-size: 8.3px;
+  font-style: normal;
+  font-weight: 300;
+  height: auto;
+  left: 63px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 12px;
+  width: 78px;
+}
+.macbook-pro-83 .ellipse-268-1YHgtX {
+  background-color: transparent;
+  height: 294px;
+  left: 4px;
+  position: absolute;
+  top: 8px;
+  width: 287px;
+}
+.macbook-pro-83 .ellipse-269-1YHgtX {
+  background-color: transparent;
+  height: 302px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 294px;
+}
+.macbook-pro-83 .ellipse-270-H3Pn6m {
+  background-color: transparent;
+  height: 34px;
+  left: 113px;
+  position: absolute;
+  top: 5px;
+  width: 34px;
+}
+.macbook-pro-83 .ellipse-271-jN1xVH {
+  background-color: transparent;
+  height: 34px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 34px;
+}
+.macbook-pro-83 .ellipse-272-5x9XWS {
+  background-color: transparent;
+  height: 34px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 34px;
+}
+.macbook-pro-83 .ellipse-273-IdVPB7 {
+  background-color: transparent;
+  height: 56px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 55px;
+}
+.macbook-pro-83 .ellipse-274-in2BD7 {
+  background-color: transparent;
+  height: 34px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 35px;
+}
+.macbook-pro-83 .ellipse-275-bdNoKK {
+  background-color: transparent;
+  height: 34px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 34px;
+}
+.macbook-pro-83 .ellipse-276-PgojMG {
+  background-color: transparent;
+  height: 34px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 34px;
+}
+.macbook-pro-83 .ellipse-277-dW3Oyu {
+  background-color: transparent;
+  height: 34px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 34px;
+}
+.macbook-pro-83 .ellipse-278-n1EZ8Q {
+  background-color: transparent;
+  height: 34px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 34px;
+}
+.macbook-pro-83 .ellipse-279-Gbds7m {
+  background-color: transparent;
+  height: 34px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 35px;
+}
+.macbook-pro-83 .ellipse-280-Owmii4 {
+  background-color: transparent;
+  height: 34px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 34px;
+}
+.macbook-pro-83 .ellipse-281-ryBF2B {
+  background-color: transparent;
+  height: 34px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 34px;
+}
+.macbook-pro-83 .ellipse-282-4FRgX7 {
+  background-color: transparent;
+  height: 35px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 34px;
+}
+.macbook-pro-83 .ellipse-284-FNnoVy {
+  background-color: transparent;
+  height: 35px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 34px;
+}
+.macbook-pro-83 .ellipse-306-U4mRWM {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 69px;
+  margin-right: -2502px;
+  margin-top: -69px;
+  position: relative;
+  transform: rotate(-180deg);
+  width: 69px;
+}
+.macbook-pro-83 .flex-col-8vZVlG {
+  align-items: flex-start;
+  align-self: flex-end;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  height: auto;
+  justify-content: flex-start;
+  margin-bottom: 17.01px;
+  margin-left: 12px;
+  min-height: 147px;
+  position: relative;
+  width: 38px;
+}
+.macbook-pro-83 .flex-col-GRg9Pr {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 9px;
+  margin-top: 63.16px;
+  min-height: 89px;
+  position: relative;
+  width: 34px;
+}
+.macbook-pro-83 .flex-col-KtOGF4 {
+  align-items: flex-end;
+  align-self: flex-end;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  height: auto;
+  justify-content: flex-start;
+  margin-bottom: 17.01px;
+  margin-left: 80px;
+  min-height: 229px;
+  position: relative;
+  width: 147px;
+}
+.macbook-pro-83 .flex-col-RCMvP4 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 8px;
+  margin-top: 63.16px;
+  min-height: 89px;
+  position: relative;
+  width: 35px;
+}
+.macbook-pro-83 .flex-col-mJ44eC {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 12px;
+  margin-top: 63.16px;
+  min-height: 89px;
+  position: relative;
+  width: 34px;
+}
+.macbook-pro-83 .flex-col-mg4xZt {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 6px;
+  margin-top: 52.16px;
+  min-height: 100px;
+  position: relative;
+  width: 55px;
+}
+.macbook-pro-83 .flex-row-C61RwL {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 660px;
+  justify-content: flex-start;
+  margin-right: 25px;
+  margin-top: 24px;
+  min-width: 1082px;
+  position: relative;
+  width: auto;
+}
+.macbook-pro-83 .group-330-xLOVcU {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 17px;
+  justify-content: flex-start;
+  min-width: 604px;
+  position: relative;
+  width: auto;
+}
+.macbook-pro-83 .group-332-RH0WJ5 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 17px;
+  justify-content: flex-start;
+  left: 423px;
+  min-width: 594px;
+  position: absolute;
+  top: 213px;
+  width: auto;
+}
+.macbook-pro-83 .group-367-V8FHcb {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 23px;
+  position: relative;
+  width: 66px;
+}
+.macbook-pro-83 .group-367-soQ2le {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 23px;
+  position: relative;
+  width: 66px;
+}
+.macbook-pro-83 .group-367-t6M0eL {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 23px;
+  position: relative;
+  width: 66px;
+}
+.macbook-pro-83 .group-367-zBRj0c {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 23px;
+  position: relative;
+  width: 66px;
+}
+.macbook-pro-83 .group-368-V8FHcb {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 23px;
+  margin-left: 8px;
+  position: relative;
+  width: 153px;
+}
+.macbook-pro-83 .group-368-soQ2le {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 23px;
+  margin-left: 8px;
+  position: relative;
+  width: 144px;
+}
+.macbook-pro-83 .group-368-t6M0eL {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 23px;
+  margin-left: 8px;
+  position: relative;
+  width: 144px;
+}
+.macbook-pro-83 .group-368-zBRj0c {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 23px;
+  margin-left: 8px;
+  position: relative;
+  width: 163px;
+}
+.macbook-pro-83 .group-372-eVHDRt {
+  background-color: transparent;
+  border-radius: 15.833860397338867px;
+  height: 31px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 214px;
+}
+.macbook-pro-83 .group-404-blwVIj {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 302px;
+  justify-content: flex-start;
+  left: 0px;
+  min-width: 802px;
+  position: absolute;
+  top: 0px;
+  width: auto;
+}
+.macbook-pro-83 .group-415-Qig0En {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 368px;
+  position: relative;
+  width: 261px;
+}
+.macbook-pro-83 .group-415-WNqFKh {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 368px;
+  position: relative;
+  width: 254px;
+}
+.macbook-pro-83 .group-415-k0YgIR {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 368px;
+  position: relative;
+  width: 254px;
+}
+.macbook-pro-83 .group-415-xaRuvV {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 368px;
+  position: relative;
+  width: 254px;
+}
+.macbook-pro-83 .group-416-4eduM0 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 368px;
+  justify-content: flex-start;
+  left: 1028px;
+  min-width: 248px;
+  position: absolute;
+  top: 175px;
+  width: auto;
+}
+.macbook-pro-83 .group-417-4eduM0 {
+  align-items: flex-end;
+  background-color: transparent;
+  background-image: url(../img/ellipse-306@2x.svg);
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 69px;
+  justify-content: flex-start;
+  left: 120px;
+  min-width: 69px;
+  padding: 20.0px 23.8px;
+  position: absolute;
+  top: 327px;
+  width: auto;
+}
+.macbook-pro-83 .group-418-4eduM0 {
+  align-items: flex-end;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: flex-start;
+  left: 1251px;
+  min-height: 69px;
+  position: absolute;
+  top: 327px;
+  transform: rotate(180deg);
+  width: 69px;
+}
+.macbook-pro-83 .group-419-5XBeDx {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 31px;
+  position: relative;
+  width: 216px;
+}
+.macbook-pro-83 .group-420-4eduM0 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 31px;
+  justify-content: flex-start;
+  left: 613px;
+  min-width: 214px;
+  position: absolute;
+  top: 613px;
+  width: auto;
+}
+.macbook-pro-83 .group-422-RH0WJ5 {
+  align-items: flex-end;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 38px;
+  justify-content: flex-start;
+  left: 670px;
+  min-width: 100px;
+  position: absolute;
+  top: 314px;
+  width: auto;
+}
+.macbook-pro-83 .group-436-4eduM0 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 368px;
+  justify-content: flex-start;
+  left: 745px;
+  min-width: 257px;
+  position: absolute;
+  top: 175px;
+  width: auto;
+}
+.macbook-pro-83 .group-438-4eduM0 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 368px;
+  justify-content: flex-start;
+  left: 177px;
+  min-width: 248px;
+  position: absolute;
+  top: 175px;
+  width: auto;
+}
+.macbook-pro-83 .group-446-4eduM0 {
+  background-color: transparent;
+  height: 407px;
+  left: 877px;
+  position: absolute;
+  top: 820px;
+  width: 234px;
+}
+.macbook-pro-83 .group-461-4eduM0 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 368px;
+  justify-content: flex-start;
+  left: 461px;
+  min-width: 248px;
+  position: absolute;
+  top: 175px;
+  width: auto;
+}
+.macbook-pro-83 .group-470-aYvbkH {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 23px;
+  justify-content: flex-start;
+  left: 22px;
+  min-width: 225px;
+  position: absolute;
+  top: 325px;
+  width: auto;
+}
+.macbook-pro-83 .group-470-bNhJuM {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 23px;
+  justify-content: flex-start;
+  left: 22px;
+  min-width: 216px;
+  position: absolute;
+  top: 325px;
+  width: auto;
+}
+.macbook-pro-83 .group-470-hLI0Ul {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 23px;
+  justify-content: flex-start;
+  left: 22px;
+  min-width: 235px;
+  position: absolute;
+  top: 325px;
+  width: auto;
+}
+.macbook-pro-83 .group-470-iI3U4E {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 23px;
+  justify-content: flex-start;
+  left: 22px;
+  min-width: 216px;
+  position: absolute;
+  top: 325px;
+  width: auto;
+}
+.macbook-pro-83 .group-511-4eduM0 {
+  background-color: transparent;
+  height: 46px;
+  left: 313px;
+  position: absolute;
+  top: 1181px;
+  width: 172px;
+}
+.macbook-pro-83 .group-512-Epa7Hc {
+  background-color: transparent;
+  height: 46px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 172px;
+}
+.macbook-pro-83 .group-513-4eduM0 {
+  background-color: transparent;
+  height: 46px;
+  left: 499px;
+  position: absolute;
+  top: 1181px;
+  width: 170px;
+}
+.macbook-pro-83 .group-584-dXBp89 {
+  -webkit-backdrop-filter: blur(18px) brightness(100%);
+  align-items: flex-start;
+  backdrop-filter: blur(18px) brightness(100%);
+  background-color: rgba(115,115,115,0.25);
+  border-radius: 10.5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 660px;
+  justify-content: flex-start;
+  margin-left: 225px;
+  min-width: 21px;
+  padding: 2.6px 2px;
+  position: relative;
+  width: auto;
+}
+.macbook-pro-83 .group-673-dXBp89 {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 302px;
+  margin-bottom: 70.22px;
+  position: relative;
+  width: 836px;
+}
+.macbook-pro-83 .group-Ux0CEY {
+  background-color: transparent;
+  background-image: url(../img/vector-2@2x.svg);
+  background-size: 100% 100%;
+  flex-shrink: 1;
+  height: 35px;
+  margin-bottom: 0.17px;
+  margin-left: 27px;
+  position: relative;
+  width: 35px;
+}
+.macbook-pro-83 .group-wQXDsF {
+  background-color: transparent;
+  height: 14px;
+  left: 139px;
+  opacity: 0.8;
+  position: absolute;
+  top: 9px;
+  width: 13px;
+}
+.macbook-pro-83 .hem-RN0raT {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 71px;
+}
+.macbook-pro-83 .hem-i10642981067180-bxgaHT {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-bottom: 3.58px;
+  margin-left: 124px;
+  min-height: 24px;
+  min-width: 37px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.macbook-pro-83 .kapitel-H3Pn6m {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 28.1px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.14px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 126px;
+}
+.macbook-pro-83 .kom-ut-till-en-telse-varje-dag-4eduM0 {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 300;
+  height: auto;
+  left: 307px;
+  letter-spacing: 0.30px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 841px;
+  width: 505px;
+}
+.macbook-pro-83 .kontakt-i10642981067177-bxgaHT {
+  align-self: center;
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-left: 60px;
+  margin-top: 11.0px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 149px;
+}
+.macbook-pro-83 .logga-in-RN0raT {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-left: 34px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 71px;
+}
+.macbook-pro-83 .logga-ut-i10642981067182-wQXDsF {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 7px;
+  width: 176px;
+}
+.macbook-pro-83 .loggaut-bxgaHT {
+  background-color: transparent;
+  border-radius: 15px;
+  flex-shrink: 1;
+  height: 33px;
+  margin-bottom: 2.58px;
+  margin-left: 19px;
+  overflow: hidden;
+  position: relative;
+  width: 174px;
+}
+.macbook-pro-83 .loggo-bxgaHT {
+  align-self: center;
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 45px;
+  margin-top: 1.0px;
+  position: relative;
+  width: 190px;
+}
+.macbook-pro-83 .logo2bookstep-1-58J6IH {
+  background-color: transparent;
+  height: 28px;
+  left: 10px;
+  position: absolute;
+  top: 8px;
+  width: 33px;
+}
+.macbook-pro-83 .lorem-ipsum-dol-iquam-convallis-aYvbkH {
+  background-color: transparent;
+  height: auto;
+  left: 21px;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  position: absolute;
+  text-align: left;
+  top: 240px;
+  width: 219px;
+}
+.macbook-pro-83 .lorem-ipsum-dol-iquam-convallis-bNhJuM {
+  background-color: transparent;
+  height: auto;
+  left: 21px;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  position: absolute;
+  text-align: left;
+  top: 240px;
+  width: 219px;
+}
+.macbook-pro-83 .lorem-ipsum-dol-iquam-convallis-hLI0Ul {
+  background-color: transparent;
+  height: auto;
+  left: 21px;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  position: absolute;
+  text-align: left;
+  top: 240px;
+  width: 219px;
+}
+.macbook-pro-83 .lorem-ipsum-dol-iquam-convallis-iI3U4E {
+  background-color: transparent;
+  height: auto;
+  left: 21px;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  position: absolute;
+  text-align: left;
+  top: 240px;
+  width: 219px;
+}
+.macbook-pro-83 .menubarinloggad-C61RwL {
+  align-items: flex-end;
+  background-color: var(--wild-sand);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 164px;
+  justify-content: flex-end;
+  min-width: 1440px;
+  padding: 57.4px 30px;
+  position: relative;
+  width: auto;
+}
+.macbook-pro-83 .om-oss-RN0raT {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-left: 34px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 71px;
+}
+.macbook-pro-83 .om-oss-i10642981067178-bxgaHT {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-bottom: 3.58px;
+  margin-left: 46px;
+  min-height: 24px;
+  min-width: 57px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.macbook-pro-83 .ookstep-i10642981067196-58J6IH {
+  background-color: transparent;
+  height: auto;
+  left: 36px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: -0px;
+  width: 155px;
+}
+.macbook-pro-83 .overlap-group-C61RwL {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 1392px;
+  margin-top: 21px;
+  position: relative;
+  width: 1440px;
+}
+.macbook-pro-83 .overlap-group1-C61RwL {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 489px;
+  margin-top: 2px;
+  position: relative;
+  width: 1440px;
+}
+.macbook-pro-83 .overlap-group10-ia0dox {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 35px;
+  margin-top: 22px;
+  position: relative;
+  width: 38px;
+}
+.macbook-pro-83 .overlap-group11-OspJKi {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 34px;
+  position: relative;
+  width: 35px;
+}
+.macbook-pro-83 .overlap-group12-OspJKi {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 34px;
+  margin-top: 20px;
+  position: relative;
+  width: 35px;
+}
+.macbook-pro-83 .overlap-group13-5bXw8T {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 34px;
+  position: relative;
+  width: 34px;
+}
+.macbook-pro-83 .overlap-group14-5bXw8T {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 34px;
+  margin-top: 20px;
+  position: relative;
+  width: 34px;
+}
+.macbook-pro-83 .overlap-group15-auuiKh {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 34px;
+  position: relative;
+  width: 34px;
+}
+.macbook-pro-83 .overlap-group16-auuiKh {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 34px;
+  margin-top: 20px;
+  position: relative;
+  width: 34px;
+}
+.macbook-pro-83 .overlap-group2-KtOGF4 {
+  align-self: flex-start;
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 302px;
+  margin-left: 0px;
+  margin-top: -0.11px;
+  position: relative;
+  width: 294px;
+}
+.macbook-pro-83 .overlap-group3-VGG1xO {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 39px;
+  margin-top: 44px;
+  position: relative;
+  width: 147px;
+}
+.macbook-pro-83 .overlap-group4-VGG1xO {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 34px;
+  margin-top: 20px;
+  position: relative;
+  width: 34px;
+}
+.macbook-pro-83 .overlap-group5-VGG1xO {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 35px;
+  margin-top: 22px;
+  position: relative;
+  width: 34px;
+}
+.macbook-pro-83 .overlap-group6-LW5q8w {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 56px;
+  position: relative;
+  width: 55px;
+}
+.macbook-pro-83 .overlap-group7-LW5q8w {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 34px;
+  margin-left: 0.21px;
+  margin-top: 9px;
+  position: relative;
+  width: 34px;
+}
+.macbook-pro-83 .overlap-group8-ia0dox {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 34px;
+  position: relative;
+  width: 34px;
+}
+.macbook-pro-83 .overlap-group9-ia0dox {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 34px;
+  margin-top: 20px;
+  position: relative;
+  width: 34px;
+}
+.macbook-pro-83 .profil-bxgaHT {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 39px;
+  justify-content: flex-end;
+  margin-left: 134px;
+  min-width: 204px;
+  position: relative;
+  width: auto;
+}
+.macbook-pro-83 .profile-HCfW0l {
+  align-items: flex-end;
+  background-color: rgba(53,53,53,1.0);
+  border-radius: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 39px;
+  justify-content: flex-end;
+  margin-left: 10px;
+  min-width: 40px;
+  padding: 7.4px 8.2px;
+  position: relative;
+  width: auto;
+}
+.macbook-pro-83 .rectangle-1297-NY6Ocx {
+  background-color: rgba(86,86,86,1.0);
+  border-radius: 8.542372703552246px;
+  flex-shrink: 1;
+  height: 83px;
+  position: relative;
+  width: 17px;
+}
+.macbook-pro-83 .rectangle-374-4eduM0 {
+  background-color: rgba(235,235,235,1.0);
+  height: 700px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1440px;
+}
+.macbook-pro-83 .rectangle-375-4eduM0 {
+  background-color: rgba(221,221,221,1.0);
+  height: 700px;
+  left: 0px;
+  position: absolute;
+  top: 692px;
+  width: 1440px;
+}
+.macbook-pro-83 .rectangle-384-RH0WJ5 {
+  background-color: rgba(30,30,30,1.0);
+  height: 489px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1440px;
+}
+.macbook-pro-83 .rectangle-422-3MLyjT {
+  background-color: var(--mist-gray);
+  border-radius: 11.549991607666016px;
+  height: 23px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 64px;
+}
+.macbook-pro-83 .rectangle-422-6UkKc1 {
+  background-color: var(--mist-gray);
+  border-radius: 11.549991607666016px;
+  height: 23px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 64px;
+}
+.macbook-pro-83 .rectangle-422-Rl4jYY {
+  background-color: var(--mist-gray);
+  border-radius: 11.549991607666016px;
+  height: 23px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 64px;
+}
+.macbook-pro-83 .rectangle-422-VM0xCK {
+  background-color: var(--mist-gray);
+  border-radius: 11.549991607666016px;
+  height: 23px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 64px;
+}
+.macbook-pro-83 .rectangle-423-KwGpUO {
+  background-color: transparent;
+  border-radius: 11.549991607666016px;
+  height: 23px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 134px;
+}
+.macbook-pro-83 .rectangle-423-PVx8dD {
+  background-color: transparent;
+  border-radius: 11.549991607666016px;
+  height: 23px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 134px;
+}
+.macbook-pro-83 .rectangle-423-Wmbz4r {
+  background-color: transparent;
+  border-radius: 11.549991607666016px;
+  height: 23px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 137px;
+}
+.macbook-pro-83 .rectangle-423-poWdO8 {
+  background-color: transparent;
+  border-radius: 11.549991607666016px;
+  height: 23px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 135px;
+}
+.macbook-pro-83 .rectangle-435-C61RwL {
+  background-color: rgba(238,238,238,1.0);
+  flex-shrink: 1;
+  height: 884px;
+  margin-top: 293px;
+  position: relative;
+  width: 1440px;
+}
+.macbook-pro-83 .rectangle-436-aYvbkH {
+  background-color: var(--hint-of-red);
+  box-shadow: 0px 4.238807201385498px 20.34627342224121px rgba(0,0,0,0.15);;
+  height: 368px;
+  left: 1px;
+  position: absolute;
+  top: 0px;
+  width: 247px;
+}
+.macbook-pro-83 .rectangle-436-bNhJuM {
+  background-color: var(--hint-of-red);
+  box-shadow: 0px 4.238807201385498px 20.34627342224121px rgba(0,0,0,0.15);;
+  height: 368px;
+  left: 1px;
+  position: absolute;
+  top: 0px;
+  width: 247px;
+}
+.macbook-pro-83 .rectangle-436-hLI0Ul {
+  background-color: var(--hint-of-red);
+  box-shadow: 0px 4.238807201385498px 20.34627342224121px rgba(0,0,0,0.15);;
+  height: 368px;
+  left: 1px;
+  position: absolute;
+  top: 0px;
+  width: 247px;
+}
+.macbook-pro-83 .rectangle-436-iI3U4E {
+  background-color: var(--hint-of-red);
+  box-shadow: 0px 4.238807201385498px 20.34627342224121px rgba(0,0,0,0.15);;
+  height: 368px;
+  left: 1px;
+  position: absolute;
+  top: 0px;
+  width: 247px;
+}
+.macbook-pro-83 .rectangle-437-aYvbkH {
+  background-color: rgba(127,127,127,1.0);
+  height: 186px;
+  left: 1px;
+  position: absolute;
+  top: 0px;
+  width: 247px;
+}
+.macbook-pro-83 .rectangle-437-bNhJuM {
+  background-color: rgba(172,172,172,1.0);
+  height: 186px;
+  left: 1px;
+  position: absolute;
+  top: 0px;
+  width: 247px;
+}
+.macbook-pro-83 .rectangle-437-hLI0Ul {
+  background-color: rgba(85,85,85,1.0);
+  height: 186px;
+  left: 1px;
+  position: absolute;
+  top: 0px;
+  width: 247px;
+}
+.macbook-pro-83 .rectangle-437-iI3U4E {
+  background-color: rgba(208,208,208,1.0);
+  height: 186px;
+  left: 1px;
+  position: absolute;
+  top: 0px;
+  width: 247px;
+}
+.macbook-pro-83 .rectangle-440-4eduM0 {
+  background-color: transparent;
+  height: 40px;
+  left: 921px;
+  position: absolute;
+  top: 175px;
+  width: 72px;
+}
+.macbook-pro-83 .rectangle-440-aYvbkH {
+  background-color: transparent;
+  height: 40px;
+  left: 176px;
+  position: absolute;
+  top: 0px;
+  width: 72px;
+}
+.macbook-pro-83 .rectangle-440-bNhJuM {
+  background-color: transparent;
+  height: 40px;
+  left: 176px;
+  position: absolute;
+  top: 0px;
+  width: 72px;
+}
+.macbook-pro-83 .rectangle-440-iI3U4E {
+  background-color: transparent;
+  height: 40px;
+  left: 176px;
+  position: absolute;
+  top: 0px;
+  width: 72px;
+}
+.macbook-pro-83 .rectangle-556-Q7CNTK {
+  background-color: rgba(93,93,93,1.0);
+  height: 46px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 170px;
+}
+.macbook-pro-83 .rectangle-556-sOcflr {
+  background-color: rgba(93,93,93,1.0);
+  height: 46px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 170px;
+}
+.macbook-pro-83 .se-all-30-000-bcker-eVHDRt {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  height: auto;
+  left: 41px;
+  letter-spacing: 0.17px;
+  line-height: 21px;
+  position: absolute;
+  text-align: left;
+  top: 6px;
+  white-space: nowrap;
+  width: auto;
+}
+.macbook-pro-83 .skapa-konto-gratis-RN0raT {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-left: 51px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 154px;
+}
+.macbook-pro-83 .span0-3IqeBo {
+  color: rgba(0,0,0,1.0);
+  font-style: normal;
+  letter-spacing: 0.02px;
+}
+.macbook-pro-83 .span0-9B4Svv {
+  color: rgba(255,255,255,1.0);
+  font-style: normal;
+}
+.macbook-pro-83 .span0-rK4C3z {
+  color: rgba(255,255,255,1.0);
+  font-style: normal;
+}
+.macbook-pro-83 .span1-3IqeBo {
+  color: rgba(0,0,0,1.0);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.02px;
+}
+.macbook-pro-83 .span1-9B4Svv {
+  color: rgba(255,255,255,1.0);
+  font-style: normal;
+  font-weight: 500;
+}
+.macbook-pro-83 .span1-rK4C3z {
+  color: rgba(255,255,255,1.0);
+  font-style: normal;
+  font-weight: 500;
+}
+.macbook-pro-83 .spara-till-favoriter-KwGpUO {
+  background-color: transparent;
+  height: auto;
+  left: 10px;
+  letter-spacing: 0.17px;
+  line-height: 21px;
+  position: absolute;
+  text-align: left;
+  top: 1px;
+  white-space: nowrap;
+  width: 134px;
+}
+.macbook-pro-83 .spara-till-favoriter-PVx8dD {
+  background-color: transparent;
+  height: auto;
+  left: 8px;
+  letter-spacing: 0.17px;
+  line-height: 21px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 155px;
+}
+.macbook-pro-83 .spara-till-favoriter-Wmbz4r {
+  background-color: transparent;
+  height: auto;
+  left: 10px;
+  letter-spacing: 0.17px;
+  line-height: 21px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 143px;
+}
+.macbook-pro-83 .spara-till-favoriter-poWdO8 {
+  background-color: transparent;
+  height: auto;
+  left: 10px;
+  letter-spacing: 0.17px;
+  line-height: 21px;
+  position: absolute;
+  text-align: left;
+  top: 2px;
+  white-space: nowrap;
+  width: 134px;
+}
+.macbook-pro-83 .star-1-4eduM0 {
+  background-color: transparent;
+  height: 11px;
+  left: 940px;
+  position: absolute;
+  top: 189px;
+  width: 11px;
+}
+.macbook-pro-83 .star-1-aYvbkH {
+  background-color: transparent;
+  height: 11px;
+  left: 195px;
+  position: absolute;
+  top: 14px;
+  width: 11px;
+}
+.macbook-pro-83 .star-1-bNhJuM {
+  background-color: transparent;
+  height: 10px;
+  left: 195px;
+  position: absolute;
+  top: 14px;
+  width: 11px;
+}
+.macbook-pro-83 .star-1-iI3U4E {
+  background-color: transparent;
+  height: 11px;
+  left: 195px;
+  position: absolute;
+  top: 14px;
+  width: 11px;
+}
+.macbook-pro-83 .the-clean-startup-blwVIj {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 28.1px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 495px;
+  letter-spacing: 0.04px;
+  line-height: 41.8px;
+  position: absolute;
+  text-align: left;
+  top: 49px;
+  white-space: nowrap;
+  width: 341px;
+}
+.macbook-pro-83 .till-nsta-kapitel-1YHgtX {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 18.7px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 73px;
+  letter-spacing: 0.09px;
+  line-height: 27.9px;
+  position: absolute;
+  text-align: left;
+  top: 170px;
+  white-space: nowrap;
+  width: 165px;
+}
+.macbook-pro-83 .vector-240-aYvbkH {
+  background-color: transparent;
+  height: 186px;
+  left: 0px;
+  position: absolute;
+  top: -0px;
+  width: 247px;
+}
+.macbook-pro-83 .vector-240-bNhJuM {
+  background-color: transparent;
+  height: 186px;
+  left: -0px;
+  position: absolute;
+  top: -0px;
+  width: 248px;
+}
+.macbook-pro-83 .vector-240-hLI0Ul {
+  background-color: transparent;
+  height: 186px;
+  left: -0px;
+  position: absolute;
+  top: -0px;
+  width: 248px;
+}
+.macbook-pro-83 .vector-240-iI3U4E {
+  background-color: transparent;
+  height: 186px;
+  left: -0px;
+  position: absolute;
+  top: -0px;
+  width: 248px;
+}
+.macbook-pro-83 .vector-241-aYvbkH {
+  background-color: transparent;
+  height: 186px;
+  left: -0px;
+  position: absolute;
+  top: 0px;
+  width: 248px;
+}
+.macbook-pro-83 .vector-241-bNhJuM {
+  background-color: transparent;
+  height: 186px;
+  left: -1px;
+  position: absolute;
+  top: 0px;
+  width: 249px;
+}
+.macbook-pro-83 .vector-241-hLI0Ul {
+  background-color: transparent;
+  height: 186px;
+  left: -1px;
+  position: absolute;
+  top: 0px;
+  width: 249px;
+}
+.macbook-pro-83 .vector-241-iI3U4E {
+  background-color: transparent;
+  height: 186px;
+  left: -1px;
+  position: absolute;
+  top: 0px;
+  width: 249px;
+}
+.macbook-pro-83 .vector-242-U4mRWM {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 29px;
+  margin-right: -2478.18px;
+  margin-top: 20px;
+  position: relative;
+  transform: rotate(-180deg);
+  width: 17px;
+}
+.macbook-pro-83 .vector-242-m5S9og {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 29px;
+  position: relative;
+  width: 17px;
+}
+.macbook-pro-83 .vector-249-81eaGx {
+  background-color: transparent;
+  height: 399px;
+  left: -1px;
+  position: absolute;
+  top: 3px;
+  width: 234px;
+}
+.macbook-pro-83 .vector-250-81eaGx {
+  background-color: transparent;
+  height: 399px;
+  left: -1px;
+  position: absolute;
+  top: 3px;
+  width: 234px;
+}
+.macbook-pro-83 .vector-5IUgZZ {
+  background-color: transparent;
+  height: 2px;
+  left: 3px;
+  position: absolute;
+  top: 6px;
+  width: 11px;
+}
+.macbook-pro-83 .vector-Epa7Hc {
+  background-color: transparent;
+  height: 26px;
+  left: 16px;
+  position: absolute;
+  top: 11px;
+  width: 24px;
+}
+.macbook-pro-83 .vector-HCfW0l {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 10px;
+  margin-left: 9px;
+  margin-top: 9.42px;
+  position: relative;
+  width: 16px;
+}
+.macbook-pro-83 .vector-Tu5MOb {
+  background-color: transparent;
+  height: 8px;
+  left: 9px;
+  position: absolute;
+  top: 3px;
+  width: 5px;
+}
+.macbook-pro-83 .vector-Ux0CEY {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 38px;
+  position: relative;
+  width: 38px;
+}
+.macbook-pro-83 .vector-d0PgHK {
+  background-color: transparent;
+  height: 1px;
+  left: 11px;
+  position: absolute;
+  top: 6px;
+  width: 1px;
+}
+.macbook-pro-83 .vector-ecSiqR {
+  background-color: transparent;
+  height: 16px;
+  left: -1px;
+  position: absolute;
+  top: -1px;
+  width: 12px;
+}
+.macbook-pro-83 .vector-sOcflr {
+  background-color: transparent;
+  height: 28px;
+  left: 16px;
+  position: absolute;
+  top: 8px;
+  width: 24px;
+}
+.macbook-pro-83 .vector-xoDvf6 {
+  background-color: transparent;
+  height: 19px;
+  left: 2px;
+  position: absolute;
+  top: 1px;
+  width: 18px;
+}
+.macbook-pro-83 .vlj-3MLyjT {
+  background-color: transparent;
+  height: auto;
+  left: 18px;
+  letter-spacing: 0.17px;
+  line-height: 21px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 31px;
+}
+.macbook-pro-83 .vlj-6UkKc1 {
+  background-color: transparent;
+  height: auto;
+  left: 18px;
+  letter-spacing: 0.17px;
+  line-height: 21px;
+  position: absolute;
+  text-align: left;
+  top: 1px;
+  white-space: nowrap;
+  width: 36px;
+}
+.macbook-pro-83 .vlj-Rl4jYY {
+  background-color: transparent;
+  height: auto;
+  left: 18px;
+  letter-spacing: 0.17px;
+  line-height: 21px;
+  position: absolute;
+  text-align: left;
+  top: 1px;
+  white-space: nowrap;
+  width: 31px;
+}
+.macbook-pro-83 .vlj-VM0xCK {
+  background-color: transparent;
+  height: auto;
+  left: 17px;
+  letter-spacing: 0.17px;
+  line-height: 21px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 33px;
+}
+.macbook-pro-83 .x1-H3Pn6m {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 21.1px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 124px;
+  letter-spacing: 0.03px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 8px;
+  width: 13px;
+}
+.macbook-pro-83 .x10-dW3Oyu {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 21.1px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 4px;
+  letter-spacing: 0.03px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4px;
+  width: 30px;
+}
+.macbook-pro-83 .x11-Gbds7m {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 21.1px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 6px;
+  letter-spacing: 0.03px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4px;
+  width: 29px;
+}
+.macbook-pro-83 .x12-ryBF2B {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 21.1px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 4px;
+  letter-spacing: 0.03px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4px;
+  width: 27px;
+}
+.macbook-pro-83 .x13-4FRgX7 {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 21.1px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 4px;
+  letter-spacing: 0.03px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4px;
+  width: 27px;
+}
+.macbook-pro-83 .x14-FNnoVy {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 21.1px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 4px;
+  letter-spacing: 0.03px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4px;
+  width: 34px;
+}
+.macbook-pro-83 .x2-jN1xVH {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 21.1px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 11px;
+  letter-spacing: 0.03px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4px;
+  width: 16px;
+}
+.macbook-pro-83 .x2500-steg-1YHgtX {
+  background-color: transparent;
+  color: rgba(39,39,39,1.0);
+  font-family: 'Rubik', Helvetica;
+  font-size: 40.9px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 47px;
+  letter-spacing: 0.10px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 111px;
+  width: 225px;
+}
+.macbook-pro-83 .x3-5x9XWS {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 21.1px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 11px;
+  letter-spacing: 0.03px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4px;
+  width: 16px;
+}
+.macbook-pro-83 .x4-IdVPB7 {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 40.9px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 13px;
+  letter-spacing: 0.10px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 3px;
+  width: 25px;
+}
+.macbook-pro-83 .x5-in2BD7 {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 21.1px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 11px;
+  letter-spacing: 0.03px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 5px;
+  width: 16px;
+}
+.macbook-pro-83 .x6-bdNoKK {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 21.1px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 11px;
+  letter-spacing: 0.03px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4px;
+  width: 16px;
+}
+.macbook-pro-83 .x7-PgojMG {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 21.1px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 11px;
+  letter-spacing: 0.03px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4px;
+  width: 14px;
+}
+.macbook-pro-83 .x77-4eduM0 {
+  background-color: transparent;
+  height: auto;
+  left: 956px;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  position: absolute;
+  text-align: left;
+  top: 184px;
+  white-space: nowrap;
+  width: 22px;
+}
+.macbook-pro-83 .x77-aYvbkH {
+  background-color: transparent;
+  height: auto;
+  left: 211px;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  position: absolute;
+  text-align: left;
+  top: 9px;
+  white-space: nowrap;
+  width: 22px;
+}
+.macbook-pro-83 .x77-bNhJuM {
+  background-color: transparent;
+  height: auto;
+  left: 211px;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  position: absolute;
+  text-align: left;
+  top: 9px;
+  white-space: nowrap;
+  width: 22px;
+}
+.macbook-pro-83 .x77-iI3U4E {
+  background-color: transparent;
+  height: auto;
+  left: 211px;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  position: absolute;
+  text-align: left;
+  top: 9px;
+  white-space: nowrap;
+  width: 22px;
+}
+.macbook-pro-83 .x8-n1EZ8Q {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 21.1px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 11px;
+  letter-spacing: 0.03px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4px;
+  width: 17px;
+}
+.macbook-pro-83 .x9-Owmii4 {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 21.1px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 11px;
+  letter-spacing: 0.03px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 4px;
+  width: 16px;
+}

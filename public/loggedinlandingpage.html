@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/loggedinlandingpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/dropdownmeny.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Rubik:400,300,700,500|Rubik+Mono+One:400|Roboto:400,700,500");
+
+      .component-wrapper a,
+      .screen a {
+        text-decoration: none;
+        display: contents;
+      }
+
+      .full-width-a {
+        width: 100%;
+      }
+
+      .full-height-a {
+        height: 100%;
+      }
+
+      .screen textarea:focus,
+      .screen input:focus {
+        outline: none;
+      }
+
+      .screen *,
+      .component-wrapper * {
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .screen div {
+        -webkit-text-size-adjust: none;
+      }
+
+      .container-center-vertical,
+      .container-center-horizontal {
+        pointer-events: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container-center-vertical {
+        align-items: center;
+        height: 100%;
+      }
+
+      .container-center-horizontal {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .container-center-vertical > *,
+      .container-center-horizontal > * {
+        pointer-events: auto;
+        flex-shrink: 0;
+      }
+
+      .component-wrapper,
+      .screen {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+      }
+
+      .auto-animated div {
+        opacity: 0;
+        position: absolute;
+        --z-index: -1;
+      }
+
+      .auto-animated .container-center-vertical,
+      .auto-animated .container-center-horizontal {
+        opacity: 1;
+      }
+
+      .overlay {
+        position: absolute;
+        opacity: 0;
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+
+      .animate-appear {
+        opacity: 0;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 normal forwards;
+      }
+
+      .animate-disappear {
+        opacity: 1;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 reverse forwards;
+      }
+
+      .animate-nodelay {
+        animation-delay: 0s;
+      }
+
+      @keyframes reveal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+      .align-self-flex-center {
+        align-self: center;
+      }
+      .valign-text-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .valign-text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      input:focus {
+        outline: none;
+      }
+      .component-wrapper,
+      .component-wrapper * {
+        pointer-events: none;
+      }
+
+      .component-wrapper a *,
+      .component-wrapper a,
+      .component-wrapper input,
+      .component-wrapper video,
+      .component-wrapper iframe,
+      .listeners-active,
+      .listeners-active * {
+        pointer-events: auto;
+      }
+
+      .hidden,
+      .hidden * {
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .smart-layers-pointers,
+      .smart-layers-pointers * {
+        pointer-events: auto;
+        visibility: visible;
+      }
+
+      .component-wrapper.not-ready,
+      .component-wrapper.not-ready * {
+        visibility: hidden !important;
+      }
+
+      .listeners-active-click,
+      .listeners-active-click * {
+        cursor: pointer;
+      }
+
+      @import url("https://fonts.googleapis.com/css?family=Rubik:400,300,700,500|Rubik+Mono+One:400|Roboto:400,700,500");
+      * {
+        box-sizing: border-box;
+      }
+      .border-0-6px-black {
+        border: 0.6px solid var(--black);
+      }
+      .border-0-8px-black {
+        border: 0.8px solid var(--black);
+      }
+      .border-0-9px-white {
+        border: 0.9px solid var(--white);
+      }
+      .border-1px-black {
+        border: 1px solid var(--black);
+      }
+      .border-1px-fuscous-gray {
+        border: 1px solid var(--fuscous-gray);
+      }
+      .border-1px-white {
+        border: 1px solid var(--white);
+      }
+      .rubik-bold-black-16px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-16px);
+        font-style: normal;
+        font-weight: 700;
+      }
+      .rubik-bold-black-18px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-18px);
+        font-style: normal;
+        font-weight: 700;
+      }
+      .rubik-bold-black-37-9px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-37_9px);
+        font-style: normal;
+        font-weight: 700;
+      }
+      .rubik-medium-black-16px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-16px);
+        font-style: normal;
+        font-weight: 500;
+      }
+      .rubik-medium-chicago-36px {
+        color: rgba(94, 94, 94, 1);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-36px);
+        font-style: normal;
+        font-weight: 500;
+      }
+      .rubik-normal-black-14px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-14px);
+        font-style: normal;
+        font-weight: 400;
+      }
+      .rubik-normal-black-16px {
+        color: var(--black);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-16px);
+        font-style: normal;
+        font-weight: 400;
+      }
+      .rubik-normal-dove-gray-14px {
+        color: var(--dove-gray);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-14px);
+        font-style: normal;
+        font-weight: 400;
+      }
+      .rubik-normal-fuscous-gray-16px {
+        color: var(--fuscous-gray);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-16px);
+        font-style: normal;
+        font-weight: 400;
+      }
+      .rubik-normal-wild-sand-16px {
+        color: var(--wild-sand);
+        font-family: var(--font-family-rubik);
+        font-size: var(--font-size-16px);
+        font-style: normal;
+        font-weight: 400;
+      }
+      :root {
+        --black: rgba(0, 0, 0, 1);
+        --celeste: rgba(207, 207, 207, 1);
+        --dove-gray: rgba(110, 110, 110, 1);
+        --font-family-rubik: "Rubik", Helvetica;
+        --font-size-14px: 14px;
+        --font-size-16px: 16px;
+        --font-size-18px: 18px;
+        --font-size-36px: 36px;
+        --font-size-37_9px: 37.9px;
+        --fuscous-gray: rgba(84, 84, 84, 1);
+        --hint-of-red: rgba(249, 249, 249, 1);
+        --mercury: rgba(230, 230, 230, 1);
+        --mist-gray: rgba(196, 196, 196, 1);
+        --pink-swan: rgba(183, 183, 183, 1);
+        --white: rgba(255, 255, 255, 1);
+        --wild-sand: rgba(244, 244, 244, 1);
+      }
+    </style>
+    <meta name="author" content="AnimaApp.com - Design to code, Automated." />
+  </head>
+  <body style="margin: 0; background: rgba(244, 244, 244, 1)">
+    <input type="hidden" id="anPageName" name="page" value="loggedinlandingpage" />
+    <div class="container-center-horizontal">
+      <div class="loggedinlandingpage screen">
+        <div class="menubarinloggad-C61RwL">
+          <a href="loggedinlandingpage.html" class="align-self-flex-center">
+            <div class="loggo-bxgaHT">
+              <div class="ookstep-i10641411067196-58J6IH rubik-bold-black-37-9px">ookstep</div>
+              <div class="logo2bookstep-1-58J6IH"></div>
+              <img class="b-logo-3-58J6IH" src="img/b-logo-3@2x.png" /></div
+          ></a>
+          <a href="loggedinlandingpage.html"
+            ><div class="hem-i10641411067180-bxgaHT rubik-normal-black-16px">Hem</div></a
+          >
+          <a href="productpage.html" class="align-self-flex-center"
+            ><div class="bcker-i10641411067179-bxgaHT rubik-normal-black-16px">Böcker</div></a
+          >
+          <div class="om-oss-i10641411067178-bxgaHT rubik-normal-black-16px">Om oss</div>
+          <div class="kontakt-i10641411067177-bxgaHT rubik-normal-black-16px">Kontakt</div>
+          <a href="javascript:ShowOverlay('dropdownmeny', 'animate-appear');">
+            <div class="profil-bxgaHT">
+              <div class="anvndarnamn-i10641411067193-HCfW0l rubik-normal-black-16px">Användarnamn</div>
+              <img class="vector-HCfW0l" src="img/vector-12@2x.svg" />
+              <div class="profile-HCfW0l">
+                <div class="bxbx-user-LV8roB">
+                  <img class="vector-d0PgHK" src="img/vector@2x.png" />
+                  <img class="vector-xoDvf6" src="img/vector-14@2x.svg" />
+                </div>
+              </div></div
+          ></a>
+          <a href="index-landingpage.html">
+            <div class="loggaut-bxgaHT border-1px-fuscous-gray">
+              <div class="logga-ut-i10641411067182-wQXDsF rubik-normal-fuscous-gray-16px">Logga ut</div>
+              <div class="group-wQXDsF">
+                <img class="vector-Tu5MOb" src="img/vector-9@2x.svg" />
+                <img class="vector-5IUgZZ" src="img/vector-10@2x.svg" />
+                <img class="vector-ecSiqR" src="img/vector-11@2x.svg" />
+              </div></div
+          ></a>
+        </div>
+        <div class="flex-row-C61RwL">
+          <div class="flex-col-dXBp89">
+            <div class="vlj-en-bok-att-lsa-upp-0PZcXW">Välj en bok att låsa upp</div>
+            <a href="productpage.html">
+              <div class="group-372-0PZcXW">
+                <div class="rectangle-423-BEAJgY"></div>
+                <div class="blddra-bland-ljudbcker-BEAJgY">Bläddra bland ljudböcker</div>
+              </div></a
+            >
+            <div class="overlap-group2-0PZcXW">
+              <div class="group-404-BxCq5y">
+                <div class="overlap-group-yTTPoH">
+                  <img class="ellipse-268-Pximis" src="img/ellipse-268-1@2x.svg" />
+                  <img class="ellipse-269-Pximis" src="img/ellipse-269@2x.svg" />
+                  <div class="x2500-steg-Pximis">2500 steg</div>
+                  <div class="till-nsta-kapitel-Pximis rubik-normal-black-16px">Till nästa kapitel</div>
+                </div>
+                <div class="flex-col-yTTPoH">
+                  <div class="bok-QxAZpS">Bok:</div>
+                  <div class="overlap-group1-QxAZpS">
+                    <div class="kapitel-VTibhF">Kapitel:</div>
+                    <img class="ellipse-270-VTibhF" src="img/ellipse-270-1@2x.svg" />
+                    <div class="x1-VTibhF rubik-bold-black-18px">1</div>
+                  </div>
+                  <div class="overlap-group3-QxAZpS">
+                    <img class="ellipse-276-b4ydLM" src="img/ellipse-276-1@2x.svg" />
+                    <div class="x7-b4ydLM rubik-bold-black-18px">7</div>
+                  </div>
+                  <div class="overlap-group4-QxAZpS">
+                    <img class="ellipse-282-t1e2HG" src="img/ellipse-282-1@2x.svg" />
+                    <div class="x13-t1e2HG rubik-bold-black-18px">13</div>
+                  </div>
+                </div>
+                <div class="flex-col-r29KrZ">
+                  <div class="overlap-group7-5iZlbW">
+                    <img class="ellipse-271-LnqgvM" src="img/ellipse-270-1@2x.svg" />
+                    <div class="x2-LnqgvM rubik-bold-black-18px">2</div>
+                  </div>
+                  <div class="overlap-group8-5iZlbW">
+                    <img class="ellipse-278-WI420k" src="img/ellipse-276-1@2x.svg" />
+                    <div class="x8-WI420k rubik-bold-black-18px">8</div>
+                  </div>
+                  <div class="overlap-group9-5iZlbW">
+                    <img class="ellipse-284-Df07Ya" src="img/ellipse-282-1@2x.svg" />
+                    <div class="x14-Df07Ya rubik-bold-black-18px">14</div>
+                  </div>
+                </div>
+                <div class="flex-col-20zDb8">
+                  <div class="overlap-group12-NRR2fb">
+                    <img class="ellipse-272-MMK6dC" src="img/ellipse-270-1@2x.svg" />
+                    <div class="x3-MMK6dC rubik-bold-black-18px">3</div>
+                  </div>
+                  <div class="overlap-group13-NRR2fb">
+                    <img class="ellipse-280-8deexx" src="img/ellipse-276-1@2x.svg" />
+                    <div class="x9-8deexx rubik-bold-black-18px">9</div>
+                  </div>
+                </div>
+                <div class="flex-col-AN6EZm">
+                  <div class="overlap-group5-Lel8Ur">
+                    <img class="ellipse-273-2v5bt9" src="img/ellipse-273-1@2x.svg" />
+                    <div class="x4-2v5bt9">4</div>
+                  </div>
+                  <div class="overlap-group6-Lel8Ur">
+                    <img class="ellipse-277-qvEZ6z" src="img/ellipse-276-1@2x.svg" />
+                    <div class="x10-qvEZ6z rubik-bold-black-18px">10</div>
+                  </div>
+                </div>
+                <div class="flex-col-4fcjjz">
+                  <div class="overlap-group10-8wfxG6">
+                    <img class="ellipse-274-46luUL" src="img/ellipse-274-1@2x.svg" />
+                    <div class="x5-46luUL rubik-bold-black-18px">5</div>
+                  </div>
+                  <div class="overlap-group11-8wfxG6">
+                    <img class="ellipse-279-dezQy7" src="img/ellipse-279-1@2x.svg" />
+                    <div class="x11-dezQy7 rubik-bold-black-18px">11</div>
+                  </div>
+                </div>
+                <div class="flex-col-xlYpxs">
+                  <div class="overlap-group14-0wNbxa">
+                    <img class="ellipse-275-NVskOR" src="img/ellipse-275-1@2x.svg" />
+                    <div class="x6-NVskOR rubik-bold-black-18px">6</div>
+                  </div>
+                  <div class="overlap-group15-0wNbxa">
+                    <img class="ellipse-281-XJDx09" src="img/ellipse-282-1@2x.svg" />
+                    <div class="x12-XJDx09 rubik-bold-black-18px">12</div>
+                  </div>
+                </div>
+              </div>
+              <div class="the-clean-startup-BxCq5y">The Clean Startup</div>
+            </div>
+          </div>
+          <div class="group-584-dXBp89">
+            <div class="rectangle-1297-NY6Ocx"></div>
+          </div>
+        </div>
+        <div class="flex-col-C61RwL">
+          <div class="overlap-group-0xy0vn">
+            <div class="rectangle-374-y1HRxC"></div>
+            <div class="rectangle-375-y1HRxC"></div>
+            <div class="bsta-bckerna-at-tivationen-igng-y1HRxC">
+              Bästa böckerna att hålla motions motivationen igång
+            </div>
+            <a href="productpage.html">
+              <div class="group-420-y1HRxC">
+                <div class="group-419-hexRxy">
+                  <div class="group-372-EiWWVS border-0-8px-black"></div>
+                  <div class="se-all-30-000-bcker-EiWWVS">Se all 30 000 böcker</div>
+                </div>
+              </div></a
+            >
+            <a href="specificbookpage.html">
+              <div class="group-416-y1HRxC">
+                <div class="group-415-RnBPDd">
+                  <div class="rectangle-436-OFFxje"></div>
+                  <div class="rectangle-437-OFFxje"></div>
+                  <img class="vector-240-OFFxje" src="img/vector-240-4@2x.svg" />
+                  <img class="vector-241-OFFxje" src="img/vector-241-4@2x.svg" />
+                  <img class="rectangle-440-OFFxje" src="img/rectangle-440-1@2x.svg" />
+                  <div class="x77-OFFxje rubik-normal-black-16px">7.7</div>
+                  <img class="star-1-OFFxje" src="img/star-1-1@2x.svg" />
+                  <div class="lorem-ipsum-dol-iquam-convallis-OFFxje rubik-normal-black-16px">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam convallis.
+                  </div>
+                  <div class="boktitel-OFFxje rubik-bold-black-18px">Boktitel</div>
+                  <div class="group-470-OFFxje">
+                    <div class="group-367-SmeyD0">
+                      <div class="rectangle-422-ENWubw"></div>
+                      <div class="vlj-ENWubw rubik-normal-black-14px">välj</div>
+                    </div>
+                    <div class="group-368-SmeyD0">
+                      <div class="rectangle-423-USYAnD border-0-6px-black"></div>
+                      <div class="spara-till-favoriter-USYAnD rubik-normal-black-14px">spara till favoriter</div>
+                    </div>
+                  </div>
+                </div>
+              </div></a
+            >
+            <a href="specificbookpage.html">
+              <div class="group-436-y1HRxC">
+                <div class="group-415-Yyx2YQ">
+                  <div class="rectangle-436-pe6IC7"></div>
+                  <div class="rectangle-437-pe6IC7"></div>
+                  <img class="vector-240-pe6IC7" src="img/vector-240-5@2x.svg" />
+                  <img class="vector-241-pe6IC7" src="img/vector-241-5@2x.svg" />
+                  <div class="lorem-ipsum-dol-iquam-convallis-pe6IC7 rubik-normal-black-16px">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam convallis.
+                  </div>
+                  <div class="boktitel-pe6IC7 rubik-bold-black-18px">Boktitel</div>
+                  <div class="group-470-pe6IC7">
+                    <div class="group-367-SZqm76">
+                      <div class="rectangle-422-NeCpMU"></div>
+                      <div class="vlj-NeCpMU rubik-normal-black-14px">välj</div>
+                    </div>
+                    <div class="group-368-SZqm76">
+                      <div class="rectangle-423-9Talq2 border-0-6px-black"></div>
+                      <div class="spara-till-favoriter-9Talq2 rubik-normal-black-14px">spara till favoriter</div>
+                    </div>
+                  </div>
+                </div>
+              </div></a
+            >
+            <img class="rectangle-440-y1HRxC" src="img/rectangle-440@2x.svg" />
+            <div class="x77-y1HRxC rubik-normal-black-16px">7.7</div>
+            <img class="star-1-y1HRxC" src="img/star-1@2x.svg" />
+            <a href="specificbookpage.html">
+              <div class="group-461-y1HRxC">
+                <div class="group-415-JcjlTE">
+                  <div class="rectangle-436-SWMbei"></div>
+                  <div class="rectangle-437-SWMbei"></div>
+                  <img class="rectangle-440-SWMbei" src="img/rectangle-440@2x.svg" />
+                  <div class="x77-SWMbei rubik-normal-black-16px">7.7</div>
+                  <img class="star-1-SWMbei" src="img/star-1-2@2x.svg" />
+                  <img class="vector-240-SWMbei" src="img/vector-240-6@2x.svg" />
+                  <img class="vector-241-SWMbei" src="img/vector-241-5@2x.svg" />
+                  <div class="lorem-ipsum-dol-iquam-convallis-SWMbei rubik-normal-black-16px">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam convallis.
+                  </div>
+                  <div class="boktitel-SWMbei rubik-bold-black-18px">Boktitel</div>
+                  <div class="group-470-SWMbei">
+                    <div class="group-367-9UKcKG">
+                      <div class="rectangle-422-3B0dxx"></div>
+                      <div class="vlj-3B0dxx rubik-normal-black-14px">välj</div>
+                    </div>
+                    <div class="group-368-9UKcKG">
+                      <div class="rectangle-423-Pu6Mv5 border-0-6px-black"></div>
+                      <div class="spara-till-favoriter-Pu6Mv5 rubik-normal-black-14px">spara till favoriter</div>
+                    </div>
+                  </div>
+                </div>
+              </div></a
+            >
+            <a href="specificbookpage.html">
+              <div class="group-438-y1HRxC">
+                <div class="group-415-9MUGfM">
+                  <div class="rectangle-436-kEziSJ"></div>
+                  <div class="rectangle-437-kEziSJ"></div>
+                  <img class="vector-240-kEziSJ" src="img/vector-240-6@2x.svg" />
+                  <img class="vector-241-kEziSJ" src="img/vector-241-5@2x.svg" />
+                  <div class="lorem-ipsum-dol-iquam-convallis-kEziSJ rubik-normal-black-16px">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam convallis.
+                  </div>
+                  <div class="boktitel-kEziSJ rubik-bold-black-18px">Boktitel</div>
+                  <div class="group-470-kEziSJ">
+                    <div class="group-367-kGrCwq">
+                      <div class="rectangle-422-CIL1sb"></div>
+                      <div class="vlj-CIL1sb rubik-normal-black-14px">välj</div>
+                    </div>
+                    <div class="group-368-kGrCwq">
+                      <div class="rectangle-423-m6y2xr border-0-6px-black"></div>
+                      <div class="spara-till-favoriter-m6y2xr rubik-normal-black-14px">spara till favoriter</div>
+                    </div>
+                  </div>
+                  <img class="rectangle-440-kEziSJ" src="img/rectangle-440@2x.svg" />
+                  <div class="x77-kEziSJ rubik-normal-black-16px">7.7</div>
+                  <img class="star-1-kEziSJ" src="img/star-1@2x.svg" />
+                </div></div
+            ></a>
+            <div class="group-417-y1HRxC"><img class="vector-242-nsiDTc" src="img/vector-242-2@2x.svg" /></div>
+            <div class="group-418-y1HRxC">
+              <img class="ellipse-306-0kxLof" src="img/ellipse-306-1@2x.svg" />
+              <img class="vector-242-0kxLof" src="img/vector-242-3@2x.svg" />
+            </div>
+            <div class="group-446-y1HRxC border-1px-black">
+              <img class="vector-249-mXv29L" src="img/vector-249-3@2x.svg" />
+              <img class="vector-250-mXv29L" src="img/vector-250-3@2x.svg" />
+            </div>
+            <div class="kom-ut-till-en-telse-varje-dag-y1HRxC">Kom ut till en ny berättelse varje dag.</div>
+            <div class="anvndare-kan-nu-och-google-play-y1HRxC">
+              Användare kan nu synkronisera Bookstep med de senaste träningsapparna från App Store och Google Play.
+            </div>
+            <div class="group-511-y1HRxC">
+              <div class="rectangle-556-pGgdA0"></div>
+              <img class="vector-pGgdA0" src="img/vector-5@2x.svg" />
+              <div class="download-from-app-store-pGgdA0">
+                <span class="span0-YLL53T">DOWNLOAD FROM<br /></span><span class="span1-YLL53T">APP STORE</span>
+              </div>
+            </div>
+            <div class="group-513-y1HRxC">
+              <div class="group-512-DZn6aA">
+                <div class="rectangle-556-qECoF8"></div>
+                <div class="download-from-google-play-qECoF8">
+                  <span class="span0-LiZz4X">DOWNLOAD FROM<br /></span><span class="span1-LiZz4X">Google play</span>
+                </div>
+              </div>
+              <img class="vector-DZn6aA" src="img/vector-3@2x.svg" />
+            </div>
+          </div>
+          <div class="overlap-group1-0xy0vn">
+            <div class="rectangle-384-NG5cxJ"></div>
+            <div class="group-332-NG5cxJ">
+              <div class="group-330-eSLabF">
+                <div class="hem-Exap6x rubik-normal-wild-sand-16px">Hem</div>
+                <div class="bcker-Exap6x rubik-normal-wild-sand-16px">Böcker</div>
+                <div class="om-oss-Exap6x rubik-normal-wild-sand-16px">Om oss</div>
+                <div class="logga-in-Exap6x rubik-normal-wild-sand-16px">Logga in</div>
+                <div class="skapa-konto-gratis-Exap6x rubik-normal-wild-sand-16px">Skapa konto gratis</div>
+              </div>
+            </div>
+            <div class="group-422-NG5cxJ">
+              <img class="vector-FrOVpX" src="img/vector-1@2x.svg" />
+              <div class="group-FrOVpX"></div>
+            </div>
+          </div>
+          <div class="rectangle-435-0xy0vn"></div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay-dropdownmeny" class="overlay" style="min-height: 2752px">
+      <div class="container-center-horizontal">
+        <div class="dropdownmeny screen">
+          <img class="vector-C61RwL" src="img/vector@2x.svg" />
+          <div class="frame-26-C61RwL">
+            <a href="macbook-pro-78.html"><div class="pgende-bok-yS5w2I">Pågående bok</div></a>
+            <a href="frame-18.html"><div class="profil-yS5w2I">Profil</div></a>
+            <div class="bokteam-yS5w2I">Bokteam</div>
+            <div class="statistik-yS5w2I">Statistik</div>
+            <a href="macbook-pro-79.html"><div class="instllningar-yS5w2I">Inställningar</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var overlay_id = "overlay-dropdownmeny";
+      document.getElementById(overlay_id).addEventListener(
+        "click",
+        function (event) {
+          var e = event || window.event;
+          var clickedDiv = e.toElement || e.target;
+          if (clickedDiv.parentElement.id == overlay_id) {
+            HideOverlay("dropdownmeny", "animate-disappear");
+          }
+        },
+        false
+      );
+    </script>
+    <script>
+      ShowOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
+        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var last = cssClasses.slice(-1)[0];
+        if (last.lastIndexOf("animate") == -1) {
+          document.getElementById(overlayName).className =
+            document.getElementById(overlayName).className + " " + animationName;
+        }
+        if (window.loadAsyncSrc != undefined) {
+          loadAsyncSrc();
+        }
+      };
+      HideOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
+        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var last = cssClasses.slice(-1)[0];
+        if (last.lastIndexOf("animate") != -1) {
+          cssClasses.splice(-1);
+          cssClasses.push(animationName);
+          document.getElementById(overlayName).className = cssClasses.join(" ");
+
+          cssClasses.splice(-1);
+          setTimeout(function () {
+            document.getElementById(overlayName).className = cssClasses.join(" ");
+          }, 1100);
+        }
+        var vids = document.getElementsByTagName("video");
+        if (vids) {
+          for (var i = 0; i < vids.length; i++) {
+            var video = vids.item(i);
+            video.pause();
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

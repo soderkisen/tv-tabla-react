@@ -1,0 +1,146 @@
+/* screen - tutorialstep2 */
+
+.tutorialstep2 {
+  align-items: center;
+  background-color: var(--white);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: flex-start;
+  min-height: 468px;
+  overflow-x: hidden;
+  padding: 31px 326.2px;
+  position: relative;
+  width: 990.33px;
+}
+.tutorialstep2 .du-fr-lyssna-p-g-ett-enda-steg-C61RwL {
+  align-self: flex-end;
+  background-color: transparent;
+  color: var(--black);
+  flex-shrink: 1;
+  font-family: 'Rubik', Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  height: auto;
+  letter-spacing: 0.12px;
+  line-height: 35.8px;
+  margin-top: 109px;
+  min-height: 109px;
+  position: relative;
+  text-align: center;
+  width: 331px;
+}
+.tutorialstep2 .ellipse-302-5hxNt9 {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 14px;
+  margin-bottom: -0.58px;
+  margin-left: 0px;
+  position: relative;
+  width: 14px;
+}
+.tutorialstep2 .ellipse-303-5hxNt9 {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 13px;
+  margin-bottom: -0.31px;
+  margin-left: 21px;
+  position: relative;
+  width: 13px;
+}
+.tutorialstep2 .ellipse-304-5hxNt9 {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 14px;
+  margin-bottom: -0.58px;
+  margin-left: 20px;
+  position: relative;
+  width: 13px;
+}
+.tutorialstep2 .group-406-C61RwL {
+  align-items: flex-end;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 13px;
+  justify-content: flex-start;
+  margin-left: 2.17px;
+  margin-top: 37px;
+  min-width: 81px;
+  position: relative;
+  width: auto;
+}
+.tutorialstep2 .lyssna-p-frsta-kapitelet-C61RwL {
+  background-color: transparent;
+  color: var(--black);
+  flex-shrink: 1;
+  font-family: 'Rubik', Helvetica;
+  font-size: 34.4px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  letter-spacing: 0.17px;
+  line-height: normal;
+  margin-left: 5.03px;
+  min-height: 55px;
+  position: relative;
+  text-align: center;
+  width: 275px;
+}
+.tutorialstep2 .nsta-4eduM0 {
+  background-color: transparent;
+  color: rgba(216,215,215,1.0);
+  font-family: 'Rubik', Helvetica;
+  font-size: 13.8px;
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  left: 38px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 7px;
+  width: 41px;
+}
+.tutorialstep2 .overlap-group-C61RwL {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 31px;
+  margin-left: 2.85px;
+  margin-top: 49px;
+  position: relative;
+  width: 115px;
+}
+.tutorialstep2 .rectangle-1298-4eduM0 {
+  background-color: rgba(85,85,85,1.0);
+  border-radius: 12.035226821899414px;
+  box-shadow: 0px 8.940454483032227px 15.817727088928223px rgba(0,0,0,0.2);;
+  height: 31px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 115px;
+}
+.tutorialstep2 .skip-C61RwL {
+  background-color: transparent;
+  color: var(--black);
+  flex-shrink: 1;
+  font-family: 'Rubik', Helvetica;
+  font-size: 12.4px;
+  font-style: normal;
+  font-weight: 300;
+  height: auto;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  margin-left: 4.85px;
+  margin-top: 10px;
+  min-height: 14px;
+  position: relative;
+  text-align: left;
+  width: 25px;
+}

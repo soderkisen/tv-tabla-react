@@ -1,0 +1,689 @@
+/* screen - denise-4 */
+
+.denise-4 {
+  align-items: flex-start;
+  background-color: var(--wild-sand);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 1747px;
+  justify-content: flex-start;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1440px;
+}
+.denise-4 .b-logo-3-MJiU2I {
+  background-color: transparent;
+  height: 34px;
+  left: -0px;
+  object-fit: cover;
+  position: absolute;
+  top: 5px;
+  width: 39px;
+}
+.denise-4 .bcker-mZdJQv {
+  align-self: center;
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-left: 79px;
+  margin-top: 11.0px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 70px;
+}
+.denise-4 .bcker-wfBouc {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-bottom: -0.0px;
+  margin-left: 34px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 71px;
+}
+.denise-4 .biclock-4eduM0 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 18px;
+  justify-content: flex-start;
+  left: 1174px;
+  overflow: hidden;
+  position: absolute;
+  top: 336px;
+  width: 18px;
+}
+.denise-4 .ca-60-min-4eduM0 {
+  background-color: transparent;
+  color: rgba(52,52,52,1.0);
+  font-family: 'Rubik', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  height: 18px;
+  left: 1208px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 336px;
+  width: 84px;
+}
+.denise-4 .ellipse-306-MWLKxA {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 69px;
+  margin-top: 20px;
+  position: relative;
+  width: 69px;
+}
+.denise-4 .group-330-43GRBq {
+  align-items: flex-end;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 17px;
+  justify-content: flex-start;
+  min-width: 604px;
+  position: relative;
+  width: auto;
+}
+.denise-4 .group-419-4eduM0 {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: flex-start;
+  left: 97px;
+  min-height: 69px;
+  position: absolute;
+  top: 145px;
+  width: 69px;
+}
+.denise-4 .group-491-RH0WJ5 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 17px;
+  justify-content: flex-start;
+  left: 423px;
+  min-width: 594px;
+  position: absolute;
+  top: 184px;
+  width: auto;
+}
+.denise-4 .group-492-RH0WJ5 {
+  align-items: flex-end;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 38px;
+  justify-content: flex-start;
+  left: 670px;
+  min-width: 100px;
+  position: absolute;
+  top: 288px;
+  width: auto;
+}
+.denise-4 .group-508-4eduM0 {
+  background-color: transparent;
+  height: 40px;
+  left: 1204px;
+  position: absolute;
+  top: 145px;
+  width: 169px;
+}
+.denise-4 .group-572-4eduM0 {
+  background-color: transparent;
+  height: 58px;
+  left: 988px;
+  position: absolute;
+  top: 856px;
+  width: 288px;
+}
+.denise-4 .group-584-4eduM0 {
+  -webkit-backdrop-filter: blur(18px) brightness(100%);
+  align-items: flex-start;
+  backdrop-filter: blur(18px) brightness(100%);
+  background-color: rgba(115,115,115,0.25);
+  border-radius: 10.5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 660px;
+  justify-content: flex-start;
+  left: 1394px;
+  min-width: 21px;
+  padding: 2.6px 2px;
+  position: absolute;
+  top: 0px;
+  width: auto;
+}
+.denise-4 .group-AJHV8l {
+  background-color: transparent;
+  background-image: url(../img/vector-2@2x.svg);
+  background-size: 100% 100%;
+  flex-shrink: 1;
+  height: 35px;
+  margin-bottom: 0.17px;
+  margin-left: 27px;
+  position: relative;
+  width: 35px;
+}
+.denise-4 .group-AU654R {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+.denise-4 .hem-mZdJQv {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-bottom: 2px;
+  margin-left: 124px;
+  min-height: 24px;
+  min-width: 38px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.denise-4 .hem-wfBouc {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 71px;
+}
+.denise-4 .kontakt-mZdJQv {
+  align-self: center;
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-left: 58px;
+  margin-top: 11.0px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 149px;
+}
+.denise-4 .line-3-4eduM0 {
+  background-color: transparent;
+  height: 654px;
+  left: 132px;
+  position: absolute;
+  top: 282px;
+  width: 420px;
+}
+.denise-4 .line-4-4eduM0 {
+  background-color: transparent;
+  height: 656px;
+  left: 132px;
+  position: absolute;
+  top: 279px;
+  width: 417px;
+}
+.denise-4 .logga-in-U1iV6o {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  min-height: 19px;
+  position: relative;
+  text-align: center;
+  width: 176px;
+}
+.denise-4 .logga-in-wfBouc {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-bottom: -0.0px;
+  margin-left: 34px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 71px;
+}
+.denise-4 .loggain-mZdJQv {
+  align-items: center;
+  background-color: transparent;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 33px;
+  justify-content: flex-start;
+  margin-bottom: 1px;
+  margin-left: 174px;
+  overflow: hidden;
+  position: relative;
+  width: 174px;
+}
+.denise-4 .loggo-mZdJQv {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 45px;
+  position: relative;
+  width: 190px;
+}
+.denise-4 .logo2bookstep-1-MJiU2I {
+  background-color: transparent;
+  height: 28px;
+  left: 10px;
+  position: absolute;
+  top: 8px;
+  width: 33px;
+}
+.denise-4 .lorem-ipsum-4eduM0 {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 691px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  text-decoration: underline;
+  top: 376px;
+  width: 407px;
+}
+.denise-4 .lorem-ipsum-BJQsbv {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  height: 69px;
+  left: 510px;
+  letter-spacing: 2.64px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 145px;
+  width: 364px;
+}
+.denise-4 .lorem-ipsum-dol-ctetur-nulla-id-4eduM0 {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 690px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 487px;
+  width: 604px;
+}
+.denise-4 .lorem-ipsum-dollar-si-alfa-kai-4eduM0 {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 690px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 284px;
+  width: 407px;
+}
+.denise-4 .lyssna-p-frsta-kapitlet-Mv7VQX {
+  background-color: transparent;
+  height: 57px;
+  left: 0px;
+  letter-spacing: 1.76px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 1px;
+  width: 257px;
+}
+.denise-4 .menubar-C61RwL {
+  align-items: flex-end;
+  background-color: var(--wild-sand);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 164px;
+  justify-content: flex-end;
+  min-width: 1440px;
+  padding: 59px 30px;
+  position: relative;
+  width: auto;
+}
+.denise-4 .mer-information-4eduM0 {
+  background-color: transparent;
+  height: 37px;
+  left: 862px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 754px;
+  width: 260px;
+}
+.denise-4 .min-boklista-4LMZqf {
+  background-color: transparent;
+  height: 40px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  width: 137px;
+}
+.denise-4 .om-oss-mZdJQv {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-bottom: 2px;
+  margin-left: 46px;
+  min-height: 24px;
+  min-width: 59px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: auto;
+}
+.denise-4 .om-oss-wfBouc {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-bottom: -0.0px;
+  margin-left: 34px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 71px;
+}
+.denise-4 .ookstep-MJiU2I {
+  background-color: transparent;
+  height: auto;
+  left: 36px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: -0px;
+  width: 155px;
+}
+.denise-4 .overlap-group-C61RwL {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 1062px;
+  margin-top: 24px;
+  position: relative;
+  width: 1440px;
+}
+.denise-4 .overlap-group1-C61RwL {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 489px;
+  margin-top: 8px;
+  position: relative;
+  width: 1440px;
+}
+.denise-4 .planera-4eduM0 {
+  background-color: transparent;
+  color: var(--black);
+  font-family: 'Rubik', Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  height: 57px;
+  left: 690px;
+  letter-spacing: 1.98px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 856px;
+  width: 251px;
+}
+.denise-4 .polygon-5-Mv7VQX {
+  background-color: transparent;
+  height: 19px;
+  left: 252px;
+  position: absolute;
+  top: 19px;
+  width: 17px;
+}
+.denise-4 .prova-bookstep-Pog5F0 {
+  background-color: transparent;
+  color: var(--white);
+  flex-shrink: 1;
+  font-family: 'Rubik', Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  min-height: 19px;
+  position: relative;
+  text-align: center;
+  width: 176px;
+}
+.denise-4 .rectangle-1297-AQv6DA {
+  background-color: rgba(86,86,86,1.0);
+  border-radius: 8.542372703552246px;
+  flex-shrink: 1;
+  height: 83px;
+  position: relative;
+  width: 17px;
+}
+.denise-4 .rectangle-374-4eduM0 {
+  background-color: rgba(235,235,235,1.0);
+  height: 987px;
+  left: 0px;
+  position: absolute;
+  top: 75px;
+  width: 1440px;
+}
+.denise-4 .rectangle-384-RH0WJ5 {
+  background-color: rgba(30,30,30,1.0);
+  height: 489px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1440px;
+}
+.denise-4 .rectangle-461-4eduM0 {
+  background-color: var(--mist-gray);
+  height: 649px;
+  left: 132px;
+  position: absolute;
+  top: 284px;
+  width: 419px;
+}
+.denise-4 .rectangle-462-Mv7VQX {
+  background-color: var(--mist-gray);
+  box-shadow: 0px 4.239999771118164px 20.350000381469727px rgba(0,0,0,0.15);;
+  height: 57px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 286px;
+}
+.denise-4 .rectangle-463-4eduM0 {
+  background-color: var(--white);
+  box-shadow: 0px 4.239999771118164px 20.350000381469727px rgba(0,0,0,0.15);;
+  height: 71px;
+  left: 510px;
+  position: absolute;
+  top: 145px;
+  width: 362px;
+}
+.denise-4 .rectangle-464-4eduM0 {
+  background-color: var(--mist-gray);
+  box-shadow: 0px 4.239999771118164px 20.350000381469727px rgba(0,0,0,0.15);;
+  height: 57px;
+  left: 690px;
+  position: absolute;
+  top: 856px;
+  width: 246px;
+}
+.denise-4 .rectangle-544-4LMZqf {
+  background-color: rgba(205,205,205,1.0);
+  border-radius: 15px;
+  height: 40px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 167px;
+}
+.denise-4 .registrera-mZdJQv {
+  align-items: center;
+  background-color: var(--fuscous-gray);
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 33px;
+  justify-content: flex-start;
+  margin-bottom: 2px;
+  margin-left: 9px;
+  overflow: hidden;
+  position: relative;
+  width: 174px;
+}
+.denise-4 .skapa-konto-gratis-wfBouc {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: auto;
+  letter-spacing: 0.08px;
+  line-height: 23.8px;
+  margin-bottom: -0.0px;
+  margin-left: 51px;
+  min-height: 17px;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 154px;
+}
+.denise-4 .vector-242-MWLKxA {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 29px;
+  margin-right: 4.36px;
+  position: relative;
+  width: 17px;
+}
+.denise-4 .vector-243-4eduM0 {
+  background-color: transparent;
+  height: 8px;
+  left: 1063px;
+  position: absolute;
+  top: 771px;
+  width: 17px;
+}
+.denise-4 .vector-4LMZqf {
+  background-color: transparent;
+  height: 14px;
+  left: 134px;
+  position: absolute;
+  top: 13px;
+  width: 17px;
+}
+.denise-4 .vector-4eduM0 {
+  background-color: transparent;
+  height: 23px;
+  left: 1174px;
+  position: absolute;
+  top: 299px;
+  width: 13px;
+}
+.denise-4 .vector-AJHV8l {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 38px;
+  position: relative;
+  width: 38px;
+}
+.denise-4 .vector-W9nuod {
+  background-color: transparent;
+  height: 10px;
+  left: 7px;
+  position: absolute;
+  top: 3px;
+  width: 6px;
+}
+.denise-4 .vector-WN6Ohv {
+  background-color: transparent;
+  height: 18px;
+  left: -0px;
+  position: absolute;
+  top: -0px;
+  width: 18px;
+}
+.denise-4 .x10000-steg-4eduM0 {
+  background-color: transparent;
+  color: rgba(52,52,52,1.0);
+  font-family: 'Rubik', Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  height: 20px;
+  left: 1207px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 302px;
+  width: 83px;
+}
