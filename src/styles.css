@@ -1,5 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik:400,300,700,500|Rubik+Mono+One:400|Roboto:400,700,500");
 
+/* For mobile phones: */
+@media only screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
+  .menu-buttons-links {
+    display: none;
+  }
+  .menu-login-frame {
+    display: none;
+  }
+  .menu-try-frame {
+    display: none;
+  }
+
+}
+
 body {
   background-color: rgb(233, 233, 233);
 }
@@ -467,3 +484,5 @@ button {
   margin-top: 5px;
   margin-right: 7px;
 }
+
+  
