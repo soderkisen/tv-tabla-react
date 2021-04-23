@@ -14,6 +14,15 @@
   .menu-try-frame {
     display: none;
   }
+  .player {
+    width: 100%;
+  }
+  .cover {
+    display: none;
+  }
+  .audio-player {
+    width: 100%;
+  }
 
 }
 
