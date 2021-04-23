@@ -5,14 +5,17 @@ import Footer from "./Footer.js";
 import Slideshow from "./Slideshow";
 import TotalSteps from "./TotatalSteps";
 import Player from "./Player.js";
+import AudioPlayer from "./components/AudioPlayer.js";
 
 function App() {
   return (
     <div class="container">
       <Header />
       <Slideshow />
+      <AudioPlayer />
       {/* <TotalSteps /> */}
       <Player />
+      
       <Footer />
     </div>
   );
